@@ -18,11 +18,15 @@ class Window extends React.Component {
 
   handleClick = (event) => {
     if (!this.ref.current) {
-      console.log('Missing ref to Window child. Make sure to set the `ref` prop on a React component.');
+      console.log(
+        'Missing ref to Window child. Make sure to set the `ref` prop on ' +
+        'a React component.'
+      );
       return;
     }
 
     const node = ReactDOM.findDOMNode(this.ref.current);
+
     if (node.contains(event.target)) {
       // Click is inside, ignore.
       return;
