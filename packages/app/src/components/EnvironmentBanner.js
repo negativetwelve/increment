@@ -1,7 +1,7 @@
 // Libraries
 import React from 'react';
-import {colors} from '@akiolabs/ui/styles';
-import {Styled} from '@akiolabs/ui/components';
+import {colors} from '@increment/ui/styles';
+import {Styled} from '@increment/ui/components';
 
 const Container = Styled.View.extend`
   height: 30px;

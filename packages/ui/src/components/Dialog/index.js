@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import NodeEmoji from 'node-emoji';
-import {colors} from '@akiolabs/ui/styles';
+import {colors} from '@increment/ui/styles';
 
 // Components
 import Styled from '../Styled';

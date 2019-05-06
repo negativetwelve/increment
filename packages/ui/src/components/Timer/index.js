@@ -4,7 +4,7 @@ import React from 'react';
 class Timer extends React.Component {
   state = {
     timer: null,
-    counter: 0
+    counter: 0,
   };
 
   componentDidMount() {

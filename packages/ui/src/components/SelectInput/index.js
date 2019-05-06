@@ -1,7 +1,7 @@
 // Libraries
 import React from 'react';
 import PropTypes from 'prop-types';
-import {colors} from '@akiolabs/ui/styles';
+import {colors} from '@increment/ui/styles';
 
 // Components
 import Dropdown from '../Dropdown';

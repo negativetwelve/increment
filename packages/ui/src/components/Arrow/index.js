@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 // Libraries
 import React from 'react';
 
