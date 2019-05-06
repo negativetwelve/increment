@@ -1,9 +1,9 @@
 {
   "name": "@increment/app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "src/index.js",
   "dependencies": {
-    "@increment/ui": "0.1.0",
+    "@increment/ui": "^0.2.0",
     "apollo-cache-inmemory": "1.1.11",
     "apollo-client": "2.2.7",
     "apollo-link-context": "1.0.8",
@@ -14,6 +14,5 @@
     "react-apollo": "2.1.11",
     "react-router-dom": "4.2.2"
   },
-  "scripts": {
-  }
+  "scripts": {}
 }
