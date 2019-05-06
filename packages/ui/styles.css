@@ -1,0 +1,88 @@
+*,
+*:before,
+*:after,
+input[type='search']:before,
+input[type='search']:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+:focus {
+  outline: 0 none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html {
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*overflow: hidden;*/
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*overflow: hidden;*/
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: AvenirNext,Open Sans,sans-serif;
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: 'pnum';
+  font-feature-settings: 'pnum';
+  font-variant-numeric: proportional-nums;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+  -ms-font-feature-settings: 'kern','liga','clig','calt';
+  -webkit-font-feature-settings: 'kern','liga','clig','calt';
+  font-feature-settings: 'kern','liga','clig','calt','kern';
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
+.pointer-events-box-none * {
+  pointer-events: all;
+}
+
+.pointer-events-box-none {
+  pointer-events: none;
+}
+
+.pointer-events-box-only * {
+  pointer-events: none;
+}
+
+.pointer-events-box-only {
+  pointer-events: all;
+}
