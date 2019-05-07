@@ -1,6 +1,4 @@
-export {default as Arrow} from './Arrow';
 export {default as Delay} from './Delay';
-export {default as Dialog} from './Dialog';
 export {default as Dropdown} from './Dropdown';
 export {default as Form} from './Form';
 export {default as Grid} from './Grid';
