@@ -1,9 +1,9 @@
 {
   "name": "@increment/components",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "main": "build/index.js",
   "dependencies": {
-    "@increment/theme-basic": "0.4.0",
+    "@increment/theme-basic": "0.5.0",
     "formik": "0.11.11",
     "node-emoji": "1.8.1",
     "prop-types": "15.6.0",
