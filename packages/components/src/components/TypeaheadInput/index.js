@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // TODO(mark): Shouldn't use themes within core packages.
-import {colors, typography} from '@increment/theme-basic';
+import Theme from '@increment/theme-basic';
 
 // Components
 import Dropdown from '../Dropdown';
@@ -14,7 +14,7 @@ const Input = Styled.TextInput.H6.extend`
 
 const Items = Styled.View.extend`
   padding-vertical: 8px;
-  background-color: ${colors.white16};
+  background-color: ${Theme.colors.white16};
 `;
 
 const Item = Styled.View.extend`
@@ -28,7 +28,7 @@ const Text = Styled.H7.extend`
   padding-top: 7px;
   padding-bottom: 7px;
   padding-horizontal: 20px;
-  color: ${colors.gray8};
+  color: ${Theme.colors.gray8};
 `;
 
 const TypeaheadInput = ({
@@ -70,7 +70,7 @@ const TypeaheadInput = ({
           width: '100%',
           borderWidth: 1,
           borderStyle: 'solid',
-          borderColor: colors.gray14,
+          borderColor: Theme.colors.gray14,
           borderRadius: 4,
           boxShadow: '0 2px 5px rgba(194,194,194,0.5)',
         }}>
