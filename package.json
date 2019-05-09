@@ -64,7 +64,7 @@
     "lint": "eslint .",
     "lint:cached": "yarn lint --cache",
     "precommit": "lint-staged",
-    "publish": "lerna publish --force-publish",
+    "publish": "lerna publish",
     "test": "jest",
     "test:build": "yarn run build && yarn run test",
     "test:coverage": "yarn test --coverage"

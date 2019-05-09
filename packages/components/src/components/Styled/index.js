@@ -4,7 +4,9 @@
 import PropTypes from 'prop-types';
 import Styled from 'styled-x';
 import {ActivityIndicator, TextInput, TouchableOpacity} from 'react-native-web';
-import {colors, typography} from '@increment/ui/styles';
+
+// TODO(mark): Shouldn't use themes within core packages.
+import {colors, typography} from '@increment/theme-basic';
 
 // TODO(mark): There's a bug with the normal Touchable so we override it.
 Styled.Touchable = Styled(TouchableOpacity)`

@@ -1,6 +1,5 @@
 // Libraries
 import React from 'react';
-import {colors} from '@increment/ui/styles';
 import {Styled} from '@increment/components';
 
 const Container = Styled.View.extend`
@@ -16,11 +15,11 @@ const Fixed = Styled.View.extend`
   height: 30px;
   padding-horizontal: 10px;
   justify-content: center;
-  background-color: ${colors.black3};
+  background-color: #373C46;
 `;
 
 const Environment = Styled.H8.extend`
-  color: ${colors.white16};
+  color: #FFFFFF;
 `;
 
 const EnvironmentBanner = ({environment}) => (
