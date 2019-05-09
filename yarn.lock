@@ -5765,17 +5765,17 @@ react-virtualized@9.20.1:
     prop-types "^15.6.0"
     react-lifecycles-compat "^3.0.4"
 
-react-x-clipboard@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/react-x-clipboard/-/react-x-clipboard-2.6.0.tgz#9139b6b843f84c1efe893c62a870d9a0d1ada3be"
-  integrity sha1-kTm2uEP4TB7+iTxiqHDZoNGto74=
+react-x-clipboard@2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/react-x-clipboard/-/react-x-clipboard-2.7.0.tgz#83f0ede4c245a73cf984ec86b95b34a962e06a95"
+  integrity sha512-fr06ytryAgzor0FbDTlwuAU18ikjw4tcIcI246C0XTJe862eiRhshQSIcQVC4vzV7UtcIxmJYJO9GdMXkKNavw==
   dependencies:
     copy-to-clipboard "^3.0.8"
 
-react-x-keychain@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/react-x-keychain/-/react-x-keychain-2.6.0.tgz#78765af620ced8556f19abef3a23210479cfde80"
-  integrity sha1-eHZa9iDO2FVvGavvOiMhBHnP3oA=
+react-x-keychain@2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/react-x-keychain/-/react-x-keychain-2.7.0.tgz#8f3f1ed5ae2edf0c1136892224693827323bf8fc"
+  integrity sha512-CIpWGm6u/cRGFTLI1iitqTtwzcPMEZPgkjNQpWZIbOi2TU758+93jsf5KSDjrPYWaPweQg6pYZg1XRaTnUXDRw==
   dependencies:
     cookies-js "^1.2.3"
     invariant "^2.2.2"
@@ -5790,25 +5790,32 @@ react-x-primitives@2.6.0:
   dependencies:
     react-primitives "0.6.0"
 
-react-x-render@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/react-x-render/-/react-x-render-2.6.0.tgz#d8c85d8a2321213a7272650be6af017433acdc72"
-  integrity sha1-2MhdiiMhITpycmUL5q8BdDOs3HI=
+react-x-primitives@2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/react-x-primitives/-/react-x-primitives-2.7.0.tgz#e3e2888f3a2149d5c1308122d603bd383e41e736"
+  integrity sha512-aDlTC+Bj1MsqKze8u3JiwL0ClJ97Dlg0eOB/Fb8ov2wJExKs5K70kzlhrSdqaMPalKBSdR9KeckjzMDnED3MpA==
+  dependencies:
+    react-primitives "0.6.0"
+
+react-x-render@2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/react-x-render/-/react-x-render-2.7.0.tgz#b08bc576655d4afebcf441fc7221cc70afd377f6"
+  integrity sha512-qNm9C1OZ1alV1PNpM5Ir9IvLzx3vskpvXl8JkoZvqwQOdeQ2Y8/qo5j8TnAxcTa2kaDlqJixbjtHSm3LOE0jLA==
   dependencies:
     prop-types "^15.6.1"
 
-react-x-svg@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/react-x-svg/-/react-x-svg-2.6.0.tgz#714b87de8c130da77f13eb947e7d9ade621af681"
-  integrity sha1-cUuH3owTDad/E+uUfn2a3mIa9oE=
+react-x-svg@2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/react-x-svg/-/react-x-svg-2.7.0.tgz#1e992e07c8f10cf8c1dfb02012af0ce982f5f4a4"
+  integrity sha512-EA+3TJbAvsY+PmSgQGOY0uh28Sf0Y6Vqcc2V6xMcVGJ49cDj1idFUodbSH8YNjvfM+3Oaz9PRUnIaQ2amB3iiw==
   dependencies:
     prop-types "^15.6.1"
     react-native-svg "^6.3.1"
 
-react-x-switch@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/react-x-switch/-/react-x-switch-2.6.0.tgz#3d0da76d2767039324ef2a2db18f1391fe8b7888"
-  integrity sha1-PQ2nbSdnA5Mk7yotsY8Tkf6LeIg=
+react-x-switch@2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/react-x-switch/-/react-x-switch-2.7.0.tgz#72a89b4c1409e0bf2dfabea330fe6c7dc1c5f6f1"
+  integrity sha512-9yqO4p1mq+e+uvs5qDP0UsuvOXrMDZiyFp1XZZxtSVip+xwNR5R+l3rieeJtlKaqCXQRY//kmcA7QdpVxu/a3Q==
   dependencies:
     prop-types "^15.6.1"
     react-ios-switch "^0.1.19"
@@ -5818,22 +5825,32 @@ react-x-text-input@2.6.0:
   resolved "https://registry.yarnpkg.com/react-x-text-input/-/react-x-text-input-2.6.0.tgz#5152a27b3c6d3b80cf916cfe0beb8034659d3940"
   integrity sha1-UVKiezxtO4DPkWz+C+uANGWdOUA=
 
-react-x@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/react-x/-/react-x-2.6.0.tgz#c9eab079c979d25ae933e7447e9110e908114d71"
-  integrity sha1-yeqwecl50lrpM+dEfpEQ6QgRTXE=
+react-x@2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/react-x/-/react-x-2.7.0.tgz#996f4eeb1d00f49439148e9512a5a7c1f6dcd645"
+  integrity sha512-ayN6A+IQN2LKrMb+r7zyxC0o6UBMq5IKEf6le8rlL3txOmzEqH/KaUgiyoBAJBkWzmxYks4nHNOFh3qsZVgwxg==
   dependencies:
-    react-x-clipboard "2.6.0"
-    react-x-keychain "2.6.0"
-    react-x-primitives "2.6.0"
-    react-x-render "2.6.0"
-    react-x-svg "2.6.0"
-    react-x-switch "2.6.0"
+    react-x-clipboard "2.7.0"
+    react-x-keychain "2.7.0"
+    react-x-primitives "2.7.0"
+    react-x-render "2.7.0"
+    react-x-svg "2.7.0"
+    react-x-switch "2.7.0"
 
 react@16.4.1:
   version "16.4.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.4.1.tgz#de51ba5764b5dbcd1f9079037b862bd26b82fe32"
   integrity sha512-3GEs0giKp6E0Oh/Y9ZC60CmYgUPnp7voH9fbjWsvXtYFb4EWtgQub0ADSq0sJR0BbHc4FThLLtzlcFaFXIorwg==
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+
+react@16.4.2:
+  version "16.4.2"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.4.2.tgz#2cd90154e3a9d9dd8da2991149fdca3c260e129f"
+  integrity sha512-dMv7YrbxO4y2aqnvA7f/ik9ibeLSHQJTI6TrYAenPSaQ6OXfb+Oti+oJiy8WBxgRzlKatYqtCjphTgDSCEiWFg==
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
@@ -6678,57 +6695,59 @@ styled-components@3.2.1:
     stylis-rule-sheet "^0.0.8"
     supports-color "^3.2.3"
 
-styled-x-button@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/styled-x-button/-/styled-x-button-1.4.0.tgz#f3d4c28b7e8bd1269c621b5842b43baad20c2e64"
-  integrity sha1-89TCi36L0SacYhtYQrQ7qtIMLmQ=
+styled-x-button@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/styled-x-button/-/styled-x-button-1.6.0.tgz#1fc7e2f33404115ebc054c4e8163f7952505114b"
+  integrity sha512-CQBpYPUXgxwwsgfSfaIWfxQ8kR8lOCpKQCSbYliYzhxm7XlCiDoy/mwL1yRFRVV0DTqQTchwZKJUyVHmuZr3UQ==
   dependencies:
     prop-types "^15.6.1"
-    styled-x-primitives "1.4.0"
+    styled-x-primitives "1.6.0"
 
-styled-x-create-component@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/styled-x-create-component/-/styled-x-create-component-1.4.0.tgz#3b33311312ff9eab007eaa8ffd68b3d4aa7979a9"
-  integrity sha1-OzMxExL/nqsAfqqP/Wiz1Kp5eak=
+styled-x-create-component@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/styled-x-create-component/-/styled-x-create-component-1.6.0.tgz#0d0a7c12c29b8f4438f06215a9c7aa5eea3cc3ab"
+  integrity sha512-XtuM3QD2BWElGbK/xeBkWQZkJmd3gVkB2NF37PgazfJus2Xnu3KgBYimbPw4kwkXKa9zV73QTw8u3sjPEtON6Q==
   dependencies:
     lodash.pick "^4.4.0"
+    react-primitives "0.6.0"
     styled-components "3.2.1"
 
-styled-x-primitives@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/styled-x-primitives/-/styled-x-primitives-1.4.0.tgz#22d89ed0fdaa8266b28a5f0fece0e6599b6de530"
-  integrity sha1-Itie0P2qgmayil8P7ODmWZtt5TA=
+styled-x-primitives@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/styled-x-primitives/-/styled-x-primitives-1.6.0.tgz#288c0b87a038872055700566e67e3b5fe14757c3"
+  integrity sha512-FrtkjCk6lPMoNvaFsYZ7zV+c8LQGOxvLuHL1U2wF9CT/ZQZdVrzM1EF9ZRuW6uIrMK+o7r9qDDA8ZpjPa9KTWw==
   dependencies:
     react-x-primitives "2.6.0"
-    styled-x-create-component "1.4.0"
+    styled-x-create-component "1.6.0"
 
-styled-x-row@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/styled-x-row/-/styled-x-row-1.4.0.tgz#60de8c825309aa020967459838628087cd46e9de"
-  integrity sha1-YN6MglMJqgIJZ0WYOGKAh81G6d4=
+styled-x-row@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/styled-x-row/-/styled-x-row-1.6.0.tgz#5ede61ddc899d9086b46853ee6d1a6b3b0e9429f"
+  integrity sha512-BKPkAIl7kmhYJw7HHXXmDf3KT0KdHEVKViVsVJVlk+SVXCPhkvT67t2XliZPL0bvG1JlF3U4Mg1J4Ukvk+6XSw==
   dependencies:
     prop-types "^15.6.1"
-    styled-x-primitives "1.4.0"
+    styled-x-primitives "1.6.0"
 
-styled-x-text-input@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/styled-x-text-input/-/styled-x-text-input-1.4.0.tgz#0de7570aa9e7be17ed79b712b32e3a3bdba3c9e5"
-  integrity sha1-DedXCqnnvhftebcSsy46O9ujyeU=
+styled-x-text-input@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/styled-x-text-input/-/styled-x-text-input-1.6.0.tgz#bde5218b3dee34cfd8dc3546a88fbe949121aa4d"
+  integrity sha512-b6qSMXYJr7dNwWG1+1jKbvCv97OAP+37EhI6IePSylsc6ffupCqt4meofsMaYYElzt2WdcAcQMTymzYwkOGkvA==
   dependencies:
     prop-types "^15.6.1"
     react-x-text-input "2.6.0"
-    styled-x-create-component "1.4.0"
+    styled-x-create-component "1.6.0"
 
-styled-x@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/styled-x/-/styled-x-1.4.0.tgz#444dd1750ddc418ca4e72040d06e66a591a9f35f"
-  integrity sha1-RE3RdQ3cQYyk5yBA0G5mpZGp818=
+styled-x@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/styled-x/-/styled-x-1.6.0.tgz#09a3cc8f960fab89e08a707dd1a2087396a05783"
+  integrity sha512-Bioh2aG6pMsx5HmaDsKrPIrKtk76oZZiiw0mZRYI3jqQ8ie/anBzay0RceG/jtcGhX0Mvze2rNg/XRDEnOvt2A==
   dependencies:
+    react-primitives "0.6.0"
     styled-components "3.2.1"
-    styled-x-button "1.4.0"
-    styled-x-primitives "1.4.0"
-    styled-x-row "1.4.0"
-    styled-x-text-input "1.4.0"
+    styled-x-button "1.6.0"
+    styled-x-primitives "1.6.0"
+    styled-x-row "1.6.0"
+    styled-x-text-input "1.6.0"
 
 stylis-rule-sheet@^0.0.8:
   version "0.0.8"
