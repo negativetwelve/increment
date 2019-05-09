@@ -1,6 +1,6 @@
 // Libraries
 import React from 'react';
-import {Lifecycle} from '@increment/ui/components';
+import {Lifecycle} from '@increment/components';
 
 // Components
 import Analytics from '../Analytics';

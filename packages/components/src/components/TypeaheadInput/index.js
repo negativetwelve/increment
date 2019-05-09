@@ -1,7 +1,9 @@
 // Libraries
 import React from 'react';
 import PropTypes from 'prop-types';
-import {colors} from '@increment/ui/styles';
+
+// TODO(mark): Shouldn't use themes within core packages.
+import {colors, typography} from '@increment/theme-basic';
 
 // Components
 import Dropdown from '../Dropdown';

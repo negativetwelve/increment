@@ -1,7 +1,9 @@
 {
-  "name": "@increment/ui",
+  "name": "@increment/components",
   "version": "0.3.2",
+  "main": "build/index.js",
   "dependencies": {
+    "@increment/theme-basic": "^0.3.2",
     "formik": "0.11.11",
     "node-emoji": "1.8.1",
     "prop-types": "15.6.0",
@@ -15,5 +17,9 @@
     "react-x": "2.6.0",
     "styled-x": "1.4.0"
   },
-  "scripts": {}
+  "scripts": {
+    "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
+    "clean": "rimraf build",
+    "prepublishOnly": "yarn run clean && yarn run build"
+  }
 }
