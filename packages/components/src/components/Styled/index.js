@@ -6,7 +6,7 @@ import Styled from 'styled-x';
 import {ActivityIndicator, TextInput, TouchableOpacity} from 'react-native-web';
 
 // TODO(mark): Shouldn't use themes within core packages.
-import {colors, typography} from '@increment/theme-basic';
+import Theme from '@increment/theme-basic';
 
 // TODO(mark): There's a bug with the normal Touchable so we override it.
 Styled.Touchable = Styled(TouchableOpacity)`
@@ -16,24 +16,40 @@ Styled.Touchable = Styled(TouchableOpacity)`
 Styled.TextInput = Styled(TextInput)``;
 
 // Headings
-Styled.H1 = Styled.Text.extend`${props => props.mobile ? typography.h2(props) : typography.h1(props)}`;
-Styled.H2 = Styled.Text.extend`${props => props.mobile ? typography.h3(props) : typography.h2(props)}`;
-Styled.H3 = Styled.Text.extend`${props => props.mobile ? typography.h4(props) : typography.h3(props)}`;
-Styled.H4 = Styled.Text.extend`${props => props.mobile ? typography.h5(props) : typography.h4(props)}`;
-Styled.H5 = Styled.Text.extend`${props => props.mobile ? typography.h6(props) : typography.h5(props)}`;
-Styled.H6 = Styled.Text.extend`${props => props.mobile ? typography.h7(props) : typography.h6(props)}`;
-Styled.H7 = Styled.Text.extend`${props => props.mobile ? typography.h8(props) : typography.h7(props)}`;
-Styled.H8 = Styled.Text.extend`${props => props.mobile ? typography.h8(props) : typography.h8(props)}`;
+Styled.H1 = Styled.Text.extend`
+  ${props => props.mobile ? Theme.typography.h2(props) : Theme.typography.h1(props)}
+`;
+Styled.H2 = Styled.Text.extend`
+  ${props => props.mobile ? Theme.typography.h3(props) : Theme.typography.h2(props)}
+`;
+Styled.H3 = Styled.Text.extend`
+  ${props => props.mobile ? Theme.typography.h4(props) : Theme.typography.h3(props)}
+`;
+Styled.H4 = Styled.Text.extend`
+  ${props => props.mobile ? Theme.typography.h5(props) : Theme.typography.h4(props)}
+`;
+Styled.H5 = Styled.Text.extend`
+  ${props => props.mobile ? Theme.typography.h6(props) : Theme.typography.h5(props)}
+`;
+Styled.H6 = Styled.Text.extend`
+  ${props => props.mobile ? Theme.typography.h7(props) : Theme.typography.h6(props)}
+`;
+Styled.H7 = Styled.Text.extend`
+  ${props => props.mobile ? Theme.typography.h8(props) : Theme.typography.h7(props)}
+`;
+Styled.H8 = Styled.Text.extend`
+  ${props => props.mobile ? Theme.typography.h8(props) : Theme.typography.h8(props)}
+`;
 
 // TextInputs
 Styled.TextInput = Styled.TextInput.extend`
-  background-color: ${props => props.disabled || !props.editable ? colors.white4 : colors.white16};
+  background-color: ${props => props.disabled || !props.editable ? Theme.colors.white4 : Theme.colors.white16};
   height: 50px;
   padding-horizontal: 15px;
   border-radius: 5px;
   border-width: 1px;
   border-style: solid;
-  border-color: ${colors.gray14};
+  border-color: ${Theme.colors.gray14};
   cursor: ${props => props.disabled || !props.editable ? 'not-allowed' : 'text'};
 `;
 
@@ -42,13 +58,13 @@ Styled.TextInput.defaultProps = {
 };
 
 Styled.TextInput.H6 = Styled.TextInput.extend`
-  ${props => typography.h6(props)}
-  color: ${props => props.disabled || !props.editable ? colors.gray9 : colors.black3};
+  ${props => Theme.typography.h6(props)}
+  color: ${props => props.disabled || !props.editable ? Theme.colors.gray9 : Theme.colors.black3};
 `;
 
 Styled.TextInput.H7 = Styled.TextInput.extend`
-  ${props => typography.h7(props)}
-  color: ${props => props.disabled || !props.editable ? colors.gray9 : colors.black3};
+  ${props => Theme.typography.h7(props)}
+  color: ${props => props.disabled || !props.editable ? Theme.colors.gray9 : Theme.colors.black3};
 `;
 
 // Overlays
@@ -82,8 +98,8 @@ Styled.Button.propTypes = {
 Styled.Button.defaultProps = {
   activeOpacity: 1,
   width: 150,
-  color: colors.purple5,
-  disabledColor: colors.gray8,
+  color: Theme.colors.purple5,
+  disabledColor: Theme.colors.gray8,
   disabled: false,
 };
 
