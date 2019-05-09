@@ -1,9 +1,9 @@
 // Libraries
 import React from 'react';
 import {ApolloProvider} from 'react-apollo';
+import {client} from '@increment/graphql';
 
 // App
-import {client} from '../data';
 import ErrorBoundary from './ErrorBoundary';
 import EnvironmentBanner from './EnvironmentBanner';
 
