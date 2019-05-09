@@ -6695,57 +6695,59 @@ styled-components@3.2.1:
     stylis-rule-sheet "^0.0.8"
     supports-color "^3.2.3"
 
-styled-x-button@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/styled-x-button/-/styled-x-button-1.5.0.tgz#d96310625221e5fef62084d3aa3e01409aa957d8"
-  integrity sha512-x3izuY3tZHVKl1gtcq6jGsT88tRqKIIz3KntJG3UNL3Y/ecEPmqLkO12ipiBb68DCxeWxg42VXcW/4968I9wJw==
+styled-x-button@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/styled-x-button/-/styled-x-button-1.6.0.tgz#1fc7e2f33404115ebc054c4e8163f7952505114b"
+  integrity sha512-CQBpYPUXgxwwsgfSfaIWfxQ8kR8lOCpKQCSbYliYzhxm7XlCiDoy/mwL1yRFRVV0DTqQTchwZKJUyVHmuZr3UQ==
   dependencies:
     prop-types "^15.6.1"
-    styled-x-primitives "1.5.0"
+    styled-x-primitives "1.6.0"
 
-styled-x-create-component@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/styled-x-create-component/-/styled-x-create-component-1.5.0.tgz#07451cc55b102dd32df83981d24665c16c60c6d6"
-  integrity sha512-y6HimUZ1ezevi/MiRAqzjBmOLF7xqPxg2NrmtFQ82EDnKsUW1jsvxCAycuseTU6WxnOPI/U81KlePmgpdFcfXA==
+styled-x-create-component@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/styled-x-create-component/-/styled-x-create-component-1.6.0.tgz#0d0a7c12c29b8f4438f06215a9c7aa5eea3cc3ab"
+  integrity sha512-XtuM3QD2BWElGbK/xeBkWQZkJmd3gVkB2NF37PgazfJus2Xnu3KgBYimbPw4kwkXKa9zV73QTw8u3sjPEtON6Q==
   dependencies:
     lodash.pick "^4.4.0"
+    react-primitives "0.6.0"
     styled-components "3.2.1"
 
-styled-x-primitives@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/styled-x-primitives/-/styled-x-primitives-1.5.0.tgz#8140db9c2a73c411896d089d54d8862ef026377f"
-  integrity sha512-JqTIU2H7bS0xa4dHZlJYElRrFSEVKdFPUTarGwDmCQGNnqMh+OMD3wwxllLvPWFUPxjESDWlElh/VwNnxMxnUA==
+styled-x-primitives@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/styled-x-primitives/-/styled-x-primitives-1.6.0.tgz#288c0b87a038872055700566e67e3b5fe14757c3"
+  integrity sha512-FrtkjCk6lPMoNvaFsYZ7zV+c8LQGOxvLuHL1U2wF9CT/ZQZdVrzM1EF9ZRuW6uIrMK+o7r9qDDA8ZpjPa9KTWw==
   dependencies:
     react-x-primitives "2.6.0"
-    styled-x-create-component "1.5.0"
+    styled-x-create-component "1.6.0"
 
-styled-x-row@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/styled-x-row/-/styled-x-row-1.5.0.tgz#27dfa6cff7ac541d2b28e21dd57edcd06b35ed68"
-  integrity sha512-GSbirxxn2v5YdCMzw7o8z+egYQsPBP52CnyRFahtBMiHzC4ETxiFK6LlktJo4JgKdQHXwRP0ADzMLjthmDLPyQ==
+styled-x-row@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/styled-x-row/-/styled-x-row-1.6.0.tgz#5ede61ddc899d9086b46853ee6d1a6b3b0e9429f"
+  integrity sha512-BKPkAIl7kmhYJw7HHXXmDf3KT0KdHEVKViVsVJVlk+SVXCPhkvT67t2XliZPL0bvG1JlF3U4Mg1J4Ukvk+6XSw==
   dependencies:
     prop-types "^15.6.1"
-    styled-x-primitives "1.5.0"
+    styled-x-primitives "1.6.0"
 
-styled-x-text-input@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/styled-x-text-input/-/styled-x-text-input-1.5.0.tgz#104879ec942a8b1ed029ae22ce4208f95616597b"
-  integrity sha512-kFAK1gVhnrvCEmCX/Eqy5FuQ5cMmm6qOVB5GQtDk15QW/IGWc+oePfDT8FovfgtQMMT6F77k2zdQLHSLb/A3gw==
+styled-x-text-input@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/styled-x-text-input/-/styled-x-text-input-1.6.0.tgz#bde5218b3dee34cfd8dc3546a88fbe949121aa4d"
+  integrity sha512-b6qSMXYJr7dNwWG1+1jKbvCv97OAP+37EhI6IePSylsc6ffupCqt4meofsMaYYElzt2WdcAcQMTymzYwkOGkvA==
   dependencies:
     prop-types "^15.6.1"
     react-x-text-input "2.6.0"
-    styled-x-create-component "1.5.0"
+    styled-x-create-component "1.6.0"
 
-styled-x@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/styled-x/-/styled-x-1.5.0.tgz#a2004c98070b9c57a2291ad53cca8b2c62ed0de1"
-  integrity sha512-lkan736xCepORHZakZDeTwhb2RHFufvJlDUozAMsjylqyPxmnJSjcO0JrNPfE5P2c3uSsODI3lu+gkmXtgLv6w==
+styled-x@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/styled-x/-/styled-x-1.6.0.tgz#09a3cc8f960fab89e08a707dd1a2087396a05783"
+  integrity sha512-Bioh2aG6pMsx5HmaDsKrPIrKtk76oZZiiw0mZRYI3jqQ8ie/anBzay0RceG/jtcGhX0Mvze2rNg/XRDEnOvt2A==
   dependencies:
+    react-primitives "0.6.0"
     styled-components "3.2.1"
-    styled-x-button "1.5.0"
-    styled-x-primitives "1.5.0"
-    styled-x-row "1.5.0"
-    styled-x-text-input "1.5.0"
+    styled-x-button "1.6.0"
+    styled-x-primitives "1.6.0"
+    styled-x-row "1.6.0"
+    styled-x-text-input "1.6.0"
 
 stylis-rule-sheet@^0.0.8:
   version "0.0.8"
