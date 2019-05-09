@@ -1,7 +1,7 @@
 // Libraries
 import React from 'react';
 import {colors} from '@increment/ui/styles';
-import {Styled} from '@increment/ui/components';
+import {Styled} from '@increment/components';
 
 const Container = Styled.View.extend`
   height: 30px;

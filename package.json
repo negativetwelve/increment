@@ -53,7 +53,8 @@
   },
   "workspaces": [
     "examples/*",
-    "packages/*"
+    "packages/*",
+    "themes/*"
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",

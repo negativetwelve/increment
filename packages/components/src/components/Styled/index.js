@@ -21,9 +21,7 @@ Styled.H4 = Styled.Text.extend`${props => props.mobile ? typography.h5(props) : 
 Styled.H5 = Styled.Text.extend`${props => props.mobile ? typography.h6(props) : typography.h5(props)}`;
 Styled.H6 = Styled.Text.extend`${props => props.mobile ? typography.h7(props) : typography.h6(props)}`;
 Styled.H7 = Styled.Text.extend`${props => props.mobile ? typography.h8(props) : typography.h7(props)}`;
-
-// H8 doesn't have a mobile size.
-Styled.H8 = Styled.Text.extend`${props => props.desktop ? typography.h8(props) : typography.h8(props)}`;
+Styled.H8 = Styled.Text.extend`${props => props.mobile ? typography.h8(props) : typography.h8(props)}`;
 
 // TextInputs
 Styled.TextInput = Styled.TextInput.extend`

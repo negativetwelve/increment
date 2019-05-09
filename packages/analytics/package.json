@@ -3,7 +3,7 @@
   "version": "0.3.2",
   "main": "build/index.js",
   "dependencies": {
-    "@increment/ui": "^0.3.2",
+    "@increment/components": "^0.3.2",
     "prop-types": "15.6.0",
     "react": "16.4.1"
   },
