@@ -1,0 +1,12 @@
+{
+  "name": "@increment/theme-basic",
+  "version": "0.3.2",
+  "dependencies": {
+    "@increment/theme": "^0.3.2"
+  },
+  "scripts": {
+    "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
+    "clean": "rimraf build",
+    "prepublishOnly": "yarn run clean && yarn run build"
+  }
+}
