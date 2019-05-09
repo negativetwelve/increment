@@ -1,7 +1,7 @@
 {
   "name": "@increment/app",
   "version": "0.3.2",
-  "main": "src/index.js",
+  "main": "build/index.js",
   "dependencies": {
     "@increment/ui": "^0.3.2",
     "cross-fetch": "2.1.0",
@@ -9,5 +9,9 @@
     "react-apollo": "2.1.11",
     "react-router-dom": "4.2.2"
   },
-  "scripts": {}
+  "scripts": {
+    "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
+    "clean": "rimraf build",
+    "prepublishOnly": "yarn run clean && yarn run build"
+  }
 }
