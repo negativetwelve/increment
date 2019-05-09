@@ -15,5 +15,9 @@
     "react-x": "2.6.0",
     "styled-x": "1.4.0"
   },
-  "scripts": {}
+  "scripts": {
+    "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
+    "clean": "rimraf build",
+    "prepublishOnly": "yarn run clean && yarn run build"
+  }
 }
