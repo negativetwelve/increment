@@ -1,6 +1,6 @@
 {
   "name": "@increment/babel",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
