@@ -25,11 +25,11 @@
   "eslintIgnore": [
     "build",
     "coverage",
+    "examples",
     "node_modules"
   ],
   "jest": {
     "projects": [
-      "examples/*",
       "packages/*",
       "themes/*",
       "tools/*"
@@ -41,7 +41,6 @@
     ]
   },
   "workspaces": [
-    "examples/*",
     "packages/*",
     "themes/*",
     "tools/*"
