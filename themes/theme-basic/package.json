@@ -1,7 +1,7 @@
 {
   "name": "@increment/theme-basic",
   "version": "0.8.5",
-  "main": "build/index.js",
+  "main": "build/index",
   "dependencies": {
     "@increment/theme": "0.8.5"
   },

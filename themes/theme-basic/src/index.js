@@ -1,15 +1,5 @@
-// Libraries
-import Theme from '@increment/theme';
-
-// App
-import colors from './colors';
-import typography from './typography';
-
 // Styles
-import '../css/styles.css';
-import '../css/fonts/AvenirNext.css';
+import '../assets/base.css';
+import '../assets/fonts/AvenirNext/font.css';
 
-export default new Theme({
-  colors,
-  typography,
-});
+export {default} from './theme';
