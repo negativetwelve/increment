@@ -1,14 +1,16 @@
 {
   "name": "@increment/analytics",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "main": "build/index.js",
   "dependencies": {
-    "@increment/components": "0.8.1",
+    "@increment/components": "0.8.2",
     "prop-types": "15.6.0",
     "react": "16.4.2"
   },
   "babel": {
-    "presets": ["module:@increment/babel"]
+    "presets": [
+      "module:@increment/babel"
+    ]
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",

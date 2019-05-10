@@ -1,6 +1,6 @@
 {
   "name": "@increment/graphql",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "main": "build/index.js",
   "dependencies": {
     "apollo-cache-inmemory": "1.1.11",
@@ -10,7 +10,9 @@
     "graphql-tag": "2.9.2"
   },
   "babel": {
-    "presets": ["module:@increment/babel"]
+    "presets": [
+      "module:@increment/babel"
+    ]
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
