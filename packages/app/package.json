@@ -1,9 +1,9 @@
 {
   "name": "@increment/app",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "main": "build/index.js",
   "dependencies": {
-    "@increment/graphql": "0.8.6",
+    "@increment/graphql": "0.8.7",
     "apollo-client": "2.5.1",
     "cross-fetch": "2.1.0",
     "graphql": "14.2.1",

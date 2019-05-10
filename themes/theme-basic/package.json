@@ -1,9 +1,9 @@
 {
   "name": "@increment/theme-basic",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "main": "build/index",
   "dependencies": {
-    "@increment/theme": "0.8.6"
+    "@increment/theme": "0.8.7"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
