@@ -6,7 +6,8 @@
     "yarn": ">=1.0.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
     "babel-preset-jolt": "^2.8.0",
     "coveralls": "^2.13.1",
     "eslint": "^4.4.1",
