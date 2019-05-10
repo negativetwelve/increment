@@ -1,10 +1,12 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "@increment/examples-gatsby",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@increment/app": "0.8.7",
+    "@increment/components": "0.8.7",
+    "@increment/graphql": "0.8.7",
+    "@increment/theme-basic": "0.8.7",
     "gatsby": "^2.4.3",
     "gatsby-image": "^2.0.41",
     "gatsby-plugin-manifest": "^2.1.1",
@@ -21,10 +23,6 @@
   "devDependencies": {
     "prettier": "^1.17.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -32,12 +30,5 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
