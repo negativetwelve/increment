@@ -1,33 +1,56 @@
 // Libraries
 import {ApolloClient} from 'apollo-client';
+import {ApolloLink, from as combine} from 'apollo-link';
 import {HttpLink} from 'apollo-link-http';
-import {setContext} from 'apollo-link-context';
 import {InMemoryCache} from 'apollo-cache-inmemory';
 
-const authenticationLink = setContext((_, {headers}) => {
-  const token = localStorage.getItem('token');
+const createGraphQLMiddleware = ({uri}) => {
+  return new HttpLink({uri});
+};
 
-  return {
-    headers: {
-      ...headers,
-      Authorization: token ? `Bearer ${token}` : '',
-    },
-  };
-});
+const createHeadersMiddleware = (getHeaders) => {
+  return new ApolloLink((operation, forward) => {
+    operation.setContext(({headers = {}}) => ({
+      headers: {
+        ...headers,
+        ...getHeaders(),
+      },
+    }));
 
-const httpLink = new HttpLink();
-const client = new ApolloClient({
-  link: authenticationLink.concat(httpLink),
-  cache: new InMemoryCache({
-    addTypename: true,
-  }),
-  defaultOptions: {
-    watchQuery: {
-      fetchPolicy: 'cache-first',
+    return forward(operation);
+  });
+};
+
+const createAuthenticationMiddleware = (getToken) => {
+  return createHeadersMiddleware(() => {
+    const token = getToken();
+
+    return {
+      Authorization: token ? token : null,
+    };
+  });
+};
+
+const createClient = ({middleware = []}) => {
+  return new ApolloClient({
+    link: combine(middleware),
+    cache: new InMemoryCache({
+      addTypename: true,
+    }),
+    defaultOptions: {
+      watchQuery: {
+        fetchPolicy: 'cache-first',
+      },
     },
-  },
-});
+  });
+};
 
 export {
-  client,
+  // Client
+  createClient,
+
+  // Middleware
+  createGraphQLMiddleware,
+  createHeadersMiddleware,
+  createAuthenticationMiddleware,
 };

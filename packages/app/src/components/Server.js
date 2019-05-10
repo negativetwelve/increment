@@ -5,8 +5,8 @@ import {StaticRouter} from 'react-router-dom';
 // App
 import App from './App';
 
-const Server = ({location, children}) => (
-  <App>
+const Server = ({client, location, children}) => (
+  <App client={client}>
     <StaticRouter location={location}>
       {children}
     </StaticRouter>
