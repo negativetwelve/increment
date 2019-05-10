@@ -1,10 +1,9 @@
 // Libraries
 import React from 'react';
 import {ApolloProvider} from 'react-apollo';
-import {createClient} from '@increment/graphql';
 
-const App = ({children}) => (
-  <ApolloProvider client={createClient()}>
+const App = ({client, children}) => (
+  <ApolloProvider client={client}>
     {children}
   </ApolloProvider>
 );
