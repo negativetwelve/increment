@@ -4,9 +4,11 @@
   "main": "build/index.js",
   "dependencies": {
     "@increment/graphql": "0.8.6",
+    "apollo-client": "2.5.1",
     "cross-fetch": "2.1.0",
+    "graphql": "14.2.1",
     "react": "16.4.2",
-    "react-apollo": "2.1.11",
+    "react-apollo": "2.5.5",
     "react-router-dom": "4.2.2"
   },
   "scripts": {
