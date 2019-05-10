@@ -1,6 +1,12 @@
 // Libraries
 import React from 'react';
-import {AutoSizer, CellMeasurer, CellMeasurerCache, Grid as VirtualizedGrid, ScrollSync} from 'react-virtualized';
+import {
+  AutoSizer,
+  CellMeasurer,
+  CellMeasurerCache,
+  Grid as VirtualizedGrid,
+  ScrollSync,
+} from 'react-virtualized';
 import _ from 'lodash';
 
 // Assets
