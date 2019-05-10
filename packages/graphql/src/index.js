@@ -2,7 +2,12 @@
 import gql from 'graphql-tag';
 
 // App
-export * from './apollo';
+import {
+  createClient,
+  createGraphQLMiddleware,
+  createHeadersMiddleware,
+  createAuthenticationMiddleware,
+} from './apollo';
 
 gql.query = `
   __typename
@@ -16,5 +21,14 @@ gql.errors = `
 `;
 
 export {
+  // GraphQL
   gql,
+
+  // Client
+  createClient,
+
+  // Middleware
+  createGraphQLMiddleware,
+  createHeadersMiddleware,
+  createAuthenticationMiddleware,
 };
