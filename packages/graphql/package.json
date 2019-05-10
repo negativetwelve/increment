@@ -9,11 +9,6 @@
     "apollo-link-http": "1.5.3",
     "graphql-tag": "2.9.2"
   },
-  "babel": {
-    "presets": [
-      "module:@increment/babel"
-    ]
-  },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
     "clean": "rimraf build",

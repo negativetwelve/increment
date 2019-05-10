@@ -18,11 +18,6 @@
     "react-x": "2.7.0",
     "styled-x": "1.6.0"
   },
-  "babel": {
-    "presets": [
-      "module:@increment/babel"
-    ]
-  },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
     "clean": "rimraf build",
