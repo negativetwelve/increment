@@ -3,11 +3,12 @@
   "version": "0.8.6",
   "main": "build/index.js",
   "dependencies": {
-    "apollo-cache-inmemory": "1.1.11",
-    "apollo-client": "2.2.7",
+    "apollo-cache-inmemory": "1.5.1",
+    "apollo-client": "2.5.1",
     "apollo-link": "1.2.11",
-    "apollo-link-http": "1.5.3",
-    "graphql-tag": "2.9.2"
+    "apollo-link-http": "1.5.14",
+    "graphql": "14.2.1",
+    "graphql-tag": "2.10.1"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
