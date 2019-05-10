@@ -2,33 +2,33 @@
   font-family: AvenirNext;
   font-weight: 700;
   src: local('AvenirNext-Bold'),
-       url(./assets/AvenirNext-Bold.ttf);
+       url(./AvenirNext-Bold.ttf);
 }
 
 @font-face {
   font-family: AvenirNext;
   font-weight: 600;
   src: local('AvenirNext-Demi'),
-       url(./assets/AvenirNext-Demi.ttf);
+       url(./AvenirNext-Demi.ttf);
 }
 
 @font-face {
   font-family: AvenirNext;
   font-weight: 500;
   src: local('AvenirNext-Medium'),
-       url(./assets/AvenirNext-Medium.ttf);
+       url(./AvenirNext-Medium.ttf);
 }
 
 @font-face {
   font-family: AvenirNext;
   font-weight: 400;
   src: local('AvenirNext-Regular'),
-       url(./assets/AvenirNext-Regular.ttf);
+       url(./AvenirNext-Regular.ttf);
 }
 
 @font-face {
   font-family: AvenirNext;
   font-weight: 200;
   src: local('AvenirNext-Thin'),
-       url(./assets/AvenirNext-Thin.ttf);
+       url(./AvenirNext-Thin.ttf);
 }

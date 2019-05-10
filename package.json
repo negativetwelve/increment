@@ -30,7 +30,9 @@
   "jest": {
     "projects": [
       "examples/*",
-      "packages/*"
+      "packages/*",
+      "themes/*",
+      "tools/*"
     ]
   },
   "lint-staged": {
