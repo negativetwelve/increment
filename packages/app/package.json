@@ -3,10 +3,9 @@
   "version": "0.7.2",
   "main": "build/index.js",
   "dependencies": {
-    "@increment/components": "0.7.2",
     "@increment/graphql": "0.7.2",
     "cross-fetch": "2.1.0",
-    "react": "16.4.1",
+    "react": "16.4.2",
     "react-apollo": "2.1.11",
     "react-router-dom": "4.2.2"
   },

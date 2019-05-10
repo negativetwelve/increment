@@ -1,5 +1,6 @@
 export {default as Delay} from './Delay';
 export {default as Dropdown} from './Dropdown';
+export {default as ErrorBoundary} from './ErrorBoundary';
 export {default as Form} from './Form';
 export {default as Grid} from './Grid';
 export {default as Hover} from './Hover';
