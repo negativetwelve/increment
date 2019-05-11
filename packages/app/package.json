@@ -9,7 +9,7 @@
     "graphql": "14.2.1",
     "react": "16.4.2",
     "react-apollo": "2.5.5",
-    "react-router-dom": "4.2.2"
+    "react-router-dom": "5.0.0"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
