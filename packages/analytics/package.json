@@ -1,9 +1,9 @@
 {
   "name": "@increment/analytics",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "main": "build/index.js",
   "dependencies": {
-    "@increment/components": "0.8.7",
+    "@increment/components": "0.8.8",
     "prop-types": "15.6.0",
     "react": "16.4.2"
   },
