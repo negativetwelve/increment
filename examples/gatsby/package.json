@@ -23,6 +23,10 @@
   "devDependencies": {
     "prettier": "^1.17.0"
   },
+  "eslintIgnore": [
+    "build",
+    "node_modules"
+  ],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
