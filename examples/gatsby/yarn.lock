@@ -779,10 +779,8 @@
     signedsource "^1.0.0"
     yargs "^9.0.0"
 
-"@increment/app@0.8.7":
+"@increment/app@file:../../packages/app":
   version "0.8.7"
-  resolved "https://registry.yarnpkg.com/@increment/app/-/app-0.8.7.tgz#20877b325f24bdcd310a39d26f0ceb0999fabd83"
-  integrity sha512-bPI6Uejj41EhEcmDffpumyWHOB4cTdl4qqCuFK+JfhFAvnU8cSAQ+1Ha4TAR2MwXKjVpzc1f3UWzITOmySYc5g==
   dependencies:
     "@increment/graphql" "0.8.7"
     apollo-client "2.5.1"
@@ -792,10 +790,8 @@
     react-apollo "2.5.5"
     react-router-dom "4.2.2"
 
-"@increment/components@0.8.7":
+"@increment/components@file:../../packages/components":
   version "0.8.7"
-  resolved "https://registry.yarnpkg.com/@increment/components/-/components-0.8.7.tgz#b9ffb58d5be43925312087493063eae696fa5417"
-  integrity sha512-MGFrSxz0y2ddObTm+mzMi6SWb1xfIcxx5O4yIamqO/yXfusKfMsZHDCy8KSyrse1z3DsU6gEttiv40IGJ60atg==
   dependencies:
     "@increment/theme-basic" "0.8.7"
     formik "0.11.11"
@@ -824,10 +820,26 @@
     graphql "14.2.1"
     graphql-tag "2.10.1"
 
+"@increment/graphql@file:../../packages/graphql":
+  version "0.8.7"
+  dependencies:
+    apollo-cache-inmemory "1.5.1"
+    apollo-client "2.5.1"
+    apollo-link "1.2.11"
+    apollo-link-http "1.5.14"
+    eslint-plugin-graphql "3.0.3"
+    graphql "14.2.1"
+    graphql-tag "2.10.1"
+
 "@increment/theme-basic@0.8.7":
   version "0.8.7"
   resolved "https://registry.yarnpkg.com/@increment/theme-basic/-/theme-basic-0.8.7.tgz#2d6b25a1341a72639a528363b35e01d711810163"
   integrity sha512-PpcV4RCAQbMc0vYqt3R5PCfu2Ymts1QOtVxvrk9XemW9LVJConfx4XoFyrT6o/rSob7W2sJip+TyHBlqyQLLcA==
+  dependencies:
+    "@increment/theme" "0.8.7"
+
+"@increment/theme-basic@file:../../themes/theme-basic":
+  version "0.8.7"
   dependencies:
     "@increment/theme" "0.8.7"
 
@@ -3975,7 +3987,7 @@ eslint-plugin-flowtype@^2.46.1:
   dependencies:
     lodash "^4.17.10"
 
-eslint-plugin-graphql@^3.0.3:
+eslint-plugin-graphql@3.0.3, eslint-plugin-graphql@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-graphql/-/eslint-plugin-graphql-3.0.3.tgz#9ecdaf5ea8397973e29cea9dbf860420694e9df0"
   integrity sha512-hHwLyxSkC5rkakJ/SNTWwOswPdVhvfyMCnEOloevrLQIOHUNVIQBg1ljCaRe9C40HdzgcGUFUdG5BHLCKm8tuw==

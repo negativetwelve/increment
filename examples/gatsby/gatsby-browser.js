@@ -1,7 +1,12 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+// Libraries
+import React from 'react';
+import {Browser} from '@increment/app';
 
-// You can delete this file if you're not using it
+// App
+import {client} from 'config';
+
+export const wrapRootElement = ({element}) => (
+  <Browser client={client}>
+    {element}
+  </Browser>
+);

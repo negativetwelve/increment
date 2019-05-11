@@ -1,7 +1,15 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+// Libraries
+import '@increment/app/server';
+import React from 'react';
+import {Server} from '@increment/app';
 
-// You can delete this file if you're not using it
+// App
+import {client} from 'config';
+
+export const wrapPageElement = ({element, location}) => (
+  <Server
+    client={client}
+    location={location}>
+    {element}
+  </Server>
+);
