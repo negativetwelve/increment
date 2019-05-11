@@ -37,7 +37,7 @@ const createAuthenticationMiddleware = ({getToken}) => {
   return createHeadersMiddleware({getHeaders});
 };
 
-const createClient = ({middleware = []}) => {
+const createClient = ({middleware = []} = {}) => {
   return new ApolloClient({
     link: combine(middleware),
     cache: new InMemoryCache({
