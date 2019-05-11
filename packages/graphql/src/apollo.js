@@ -8,27 +8,33 @@ const createGraphQLMiddleware = ({uri}) => {
   return new HttpLink({uri});
 };
 
-const createHeadersMiddleware = (getHeaders) => {
+const createHeadersMiddleware = ({getHeaders}) => {
   return new ApolloLink((operation, forward) => {
-    operation.setContext(({headers = {}}) => ({
-      headers: {
-        ...headers,
-        ...getHeaders(),
-      },
-    }));
+    operation.setContext(async ({headers = {}}) => {
+      const newHeaders = await getHeaders();
+
+      return {
+        headers: {
+          ...headers,
+          ...newHeaders,
+        },
+      };
+    });
 
     return forward(operation);
   });
 };
 
-const createAuthenticationMiddleware = (getToken) => {
-  return createHeadersMiddleware(() => {
-    const token = getToken();
+const createAuthenticationMiddleware = ({getToken}) => {
+  const getHeaders = async () => {
+    const token = await getToken();
 
     return {
       Authorization: token ? token : null,
     };
-  });
+  };
+
+  return createHeadersMiddleware({getHeaders});
 };
 
 const createClient = ({middleware = []}) => {

@@ -1,7 +1,6 @@
 {
   "name": "@increment/examples-gatsby",
   "private": true,
-  "version": "0.1.1",
   "dependencies": {
     "@increment/app": "0.8.8",
     "@increment/components": "0.8.8",
