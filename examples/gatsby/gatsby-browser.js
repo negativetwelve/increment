@@ -13,7 +13,7 @@ const query = gql`
   }
 `;
 
-client.query({query}).then((data) => console.log(data));
+client.query({query}).then(({loading, data}) => console.log({loading, data}));
 
 export const wrapRootElement = ({element}) => (
   <Browser client={client}>

@@ -2,6 +2,7 @@
 import {ApolloClient} from 'apollo-client';
 import {InMemoryCache} from 'apollo-cache-inmemory';
 import {ApolloLink} from 'apollo-link';
+import {setContext} from 'apollo-link-context';
 import {HttpLink} from 'apollo-link-http';
 
 const createGraphQLMiddleware = ({uri}) => {
@@ -9,32 +10,28 @@ const createGraphQLMiddleware = ({uri}) => {
 };
 
 const createHeadersMiddleware = ({getHeaders}) => {
-  return new ApolloLink((operation, forward) => {
-    operation.setContext(async ({headers = {}}) => {
-      const newHeaders = await getHeaders();
+  return setContext(async (request) => {
+    const headers = await getHeaders();
 
-      return {
-        headers: {
-          ...headers,
-          ...newHeaders,
-        },
-      };
-    });
-
-    return forward(operation);
+    return {
+      headers: {
+        ...request.headers,
+        ...headers,
+      },
+    };
   });
 };
 
 const createAuthenticationMiddleware = ({getToken}) => {
-  const getHeaders = async () => {
-    const token = await getToken();
+  return createHeadersMiddleware({
+    getHeaders: async () => {
+      const token = await getToken();
 
-    return {
-      Authorization: token ? token : null,
-    };
-  };
-
-  return createHeadersMiddleware({getHeaders});
+      return {
+        Authorization: token ? token : null,
+      };
+    },
+  });
 };
 
 const createClient = ({middleware = []} = {}) => {
