@@ -1,7 +1,7 @@
 // Libraries
 import {ApolloClient} from 'apollo-client';
 import {InMemoryCache} from 'apollo-cache-inmemory';
-import {ApolloLink, from as combine} from 'apollo-link';
+import {ApolloLink} from 'apollo-link';
 import {createHttpLink} from 'apollo-link-http';
 
 const createGraphQLMiddleware = ({uri}) => {
@@ -39,7 +39,7 @@ const createAuthenticationMiddleware = ({getToken}) => {
 
 const createClient = ({middleware = []} = {}) => {
   return new ApolloClient({
-    link: combine(middleware),
+    link: ApolloLink.from(middleware),
     cache: new InMemoryCache({
       addTypename: true,
     }),
