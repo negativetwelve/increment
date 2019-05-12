@@ -1,3 +1,6 @@
+// Libraries
+const proxy = require('http-proxy-middleware');
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -31,4 +34,10 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+
+  // Sets up proxies in development, we use Render's config to handle production
+  // redirects.
+  developMiddleware: (app) => {
+    app.use('/graphql', proxy({target: 'http://localhost:5000'}));
+  },
+};
