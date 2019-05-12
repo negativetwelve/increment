@@ -2,10 +2,10 @@
 import {ApolloClient} from 'apollo-client';
 import {InMemoryCache} from 'apollo-cache-inmemory';
 import {ApolloLink} from 'apollo-link';
-import {createHttpLink} from 'apollo-link-http';
+import {HttpLink} from 'apollo-link-http';
 
 const createGraphQLMiddleware = ({uri}) => {
-  return createHttpLink({uri});
+  return new HttpLink({uri});
 };
 
 const createHeadersMiddleware = ({getHeaders}) => {
