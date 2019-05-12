@@ -8,7 +8,7 @@ import {
 const client = createClient({
   middleware: [
     createAuthenticationMiddleware({
-      getToken: () => 'token',
+      getToken: async () => 'token',
     }),
     createGraphQLMiddleware({uri: '/graphql'}),
   ],
