@@ -1,8 +1,15 @@
 // Libraries
-import {createClient, createGraphQLMiddleware} from '@increment/graphql';
+import {
+  createClient,
+  createAuthenticationMiddleware,
+  createGraphQLMiddleware,
+} from '@increment/graphql';
 
 const client = createClient({
   middleware: [
+     createAuthenticationMiddleware({
+       getToken: () => 'token',
+     }),
     createGraphQLMiddleware({uri: '/graphql'}),
   ],
 });
