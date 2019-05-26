@@ -61,7 +61,7 @@ const TypeaheadInput = ({
           width: '100%',
           borderWidth: 1,
           borderStyle: 'solid',
-          borderColor: Theme.colors.gray14,
+          borderColor: '#E0E0EB',
           borderRadius: 4,
           boxShadow: '0 2px 5px rgba(194,194,194,0.5)',
         }}>

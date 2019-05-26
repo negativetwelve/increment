@@ -2,9 +2,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// TODO(mark): Shouldn't use themes within core packages.
-import Theme from '@increment/theme-basic';
-
 // Components
 import Dropdown from '../Dropdown';
 import Styled from '../Styled';
@@ -12,13 +9,13 @@ import Styled from '../Styled';
 const Touchable = Styled.Touchable.extend`
   flex-direction: row;
   align-items: center;
-  background-color: ${Theme.colors.white16};
+  background-color: #FFFFFF;
   height: 50px;
   padding-horizontal: 15px;
   border-radius: 5px;
   border-width: 1px;
   border-style: solid;
-  border-color: ${Theme.colors.gray14};
+  border-color: #E0E0EB;
   cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
 `;
 
@@ -30,7 +27,7 @@ const Placeholder = Styled.H6.extend`
 
 const Items = Styled.View.extend`
   padding-vertical: 8px;
-  background-color: ${Theme.colors.white16};
+  background-color: #FFFFFF;
 `;
 
 const Item = Styled.View.extend`
@@ -44,7 +41,7 @@ const Text = Styled.H7.extend`
   padding-top: 7px;
   padding-bottom: 7px;
   padding-horizontal: 20px;
-  color: ${Theme.colors.gray8};
+  color: #828282;
 `;
 
 const SelectInput = ({
@@ -87,7 +84,7 @@ const SelectInput = ({
           width: '100%',
           borderWidth: 1,
           borderStyle: 'solid',
-          borderColor: Theme.colors.gray14,
+          borderColor: '#E0E0EB',
           borderRadius: 4,
           boxShadow: '0 2px 5px rgba(194,194,194,0.5)',
         }}>
