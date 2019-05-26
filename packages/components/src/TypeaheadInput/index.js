@@ -6,9 +6,6 @@ import PropTypes from 'prop-types';
 import Dropdown from '../Dropdown';
 import Styled from '../Styled';
 
-const Input = Styled.TextInput.H6.extend`
-`;
-
 const Items = Styled.View.extend`
   padding-vertical: 8px;
   background-color: #FFFFFF;
@@ -22,6 +19,7 @@ const Action = Styled.Touchable.extend`
 `;
 
 const TypeaheadInput = ({
+  component: InputComponent,
   disabled,
   height,
   name,
@@ -36,7 +34,7 @@ const TypeaheadInput = ({
 }) => (
   <Dropdown
     trigger={({handleOpen, handleClose}) => (
-      <Input
+      <InputComponent
         autoComplete={'off'}
         disabled={disabled}
         name={name}
