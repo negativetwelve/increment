@@ -19,12 +19,6 @@ const Touchable = Styled.Touchable.extend`
   cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
 `;
 
-const Value = Styled.H6.extend`
-`;
-
-const Placeholder = Styled.H6.extend`
-`;
-
 const Items = Styled.View.extend`
   padding-vertical: 8px;
   background-color: #FFFFFF;
@@ -37,13 +31,6 @@ const Item = Styled.View.extend`
 const Action = Styled.Touchable.extend`
 `;
 
-const Text = Styled.H7.extend`
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-horizontal: 20px;
-  color: #828282;
-`;
-
 const SelectInput = ({
   disabled,
   height,
@@ -54,6 +41,9 @@ const SelectInput = ({
   options,
   onChange,
   onBlur,
+  renderValue,
+  renderPlaceholder,
+  renderOption,
   style,
 }) => (
   <Dropdown
@@ -66,11 +56,9 @@ const SelectInput = ({
           activeOpacity={1}
           onPress={handleToggle}>
           {option ? (
-            <Value numberOfLines={1}>{option.name}</Value>
+            renderValue(option)
           ) : (
-            <Placeholder style={{color: placeholderTextColor}}>
-              {placeholder}
-            </Placeholder>
+            renderPlaceholder({color: placeholderTextColor, text: placeholder})
           )}
         </Touchable>
       );
@@ -91,12 +79,13 @@ const SelectInput = ({
         <Items>
           {options.map((option, index) => (
             <Item key={index}>
-              <Action onPress={() => {
-                onChange(name, option.value, option);
-                handleClose();
-              }}>
-                <Text>{option.name}</Text>
-              </Action>
+              <Action
+                onPress={() => {
+                  onChange(name, option.value, option);
+                  handleClose();
+                }}
+                children={renderOption(option)}
+              />
             </Item>
           ))}
         </Items>
