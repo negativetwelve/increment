@@ -33,7 +33,7 @@ const Inner = Styled.View`
 `;
 
 /* eslint-disable no-undef */
-describe('Styled`', () => {
+describe('Styled', () => {
   describe('View', () => {
     describe('Square', () => {
       itRenders(() => <Square />);
