@@ -6,17 +6,14 @@ import {gql} from '@increment/graphql';
 import {client} from './config';
 
 // Components
-import {Image, Text, View} from 'react-native';
+import {Text, View} from 'react-native';
 // import {Styled} from 'styled-x';
 
 // TODO
 // import {Image} from 'react-x-primitives';
-import styled from 'styled-components/primitives';
+// import styled from 'styled-components/primitives';
 // import createComponent from 'styled-x-create-component';
-
-console.log({Image});
-
-const ImageComponent = styled(Image);
+// const ImageComponent = styled(Image);
 
 // This allows us to import the entire Primitives object or specific
 // components via `import {View} from 'styled-x-primitives';`.
