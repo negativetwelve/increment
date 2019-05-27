@@ -7,9 +7,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@increment/app": "0.13.0",
-    "@increment/components": "0.13.0",
-    "@increment/graphql": "0.13.0",
+    "@increment/app": "0.14.0",
+    "@increment/components": "0.14.0",
+    "@increment/graphql": "0.14.0",
     "react": "16.8.3",
     "react-native": "0.59.8"
   },
