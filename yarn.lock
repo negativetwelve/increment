@@ -9344,17 +9344,17 @@ react-virtualized@9.20.1:
     prop-types "^15.6.0"
     react-lifecycles-compat "^3.0.4"
 
-react-x-clipboard@3.0.0-beta.0:
-  version "3.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/react-x-clipboard/-/react-x-clipboard-3.0.0-beta.0.tgz#25ceb591daf0a25e3c1b0c6a79fbaf5b9294620a"
-  integrity sha512-Z6SEs+zGh50ImhBQTtDD56Ly1nK0m6nVBtwk2GUqScvwgDyNvZ3E4Qqwc5+80yxhwox9xuDU600MY7JiGHXfpA==
+react-x-clipboard@3.0.0-beta.1:
+  version "3.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-x-clipboard/-/react-x-clipboard-3.0.0-beta.1.tgz#70b1a9754ea146b163c78270e3a86832fcbb3b63"
+  integrity sha512-pialIVL7yXVWNIfvOBpWifW1JGKfPQo6++k55tUkeS8ZSZCx53RQf5vm1DwUkmtqrsDoIfWmWyZtAf20uQX3vg==
   dependencies:
     copy-to-clipboard "^3.0.8"
 
-react-x-keychain@3.0.0-beta.0:
-  version "3.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/react-x-keychain/-/react-x-keychain-3.0.0-beta.0.tgz#79a4601d90196423c4c24784cc8f3bca6813f24f"
-  integrity sha512-E/gI1wJKNf5ZzttEQrUtM5BTBN4eRcSOEEwbqwfxO3LU3pKeLjvSQ+8iaVfK+4x9Ovks7jIVP57JDZv3CQW1gA==
+react-x-keychain@3.0.0-beta.1:
+  version "3.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-x-keychain/-/react-x-keychain-3.0.0-beta.1.tgz#821a3756e385762bee5f6727d3efad60aee3ff81"
+  integrity sha512-dBdzDb754dwwBLBtxJvUGxkeu0H5Hedn1lHXB6BZz3dex13cyciW2dN8m02ekapKEsQYXR+dyhL6E1qnxY59Sw==
   dependencies:
     cookies-js "^1.2.3"
     invariant "^2.2.2"
@@ -9369,53 +9369,61 @@ react-x-primitives@3.0.0-beta.0:
   dependencies:
     react-primitives "0.8.0"
 
-react-x-render@3.0.0-beta.0:
-  version "3.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/react-x-render/-/react-x-render-3.0.0-beta.0.tgz#b22c939ab2ed80a2ce87109e51c9874277e84c38"
-  integrity sha512-DfXeF71wEp9D/6ezG7Tm3fm8kjj60VX/RqkQCJQpPBQ17Yyy5JXct6s0F6TA/k06In0P8km3wtDrWqVBrSH1+A==
+react-x-primitives@3.0.0-beta.1:
+  version "3.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-x-primitives/-/react-x-primitives-3.0.0-beta.1.tgz#0c5c56aeb5d956b80f9ba7e0355e9a9a5e6a5782"
+  integrity sha512-bfC+seW+EATOnupg/fpPdtsENvJUutWAOMODVpVcD5cqAf8xtLytuMe4rCHXypOMODzR9SCNtrmPoqq3Cau9Ew==
+  dependencies:
+    react-primitives "0.8.0"
+
+react-x-render@3.0.0-beta.1:
+  version "3.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-x-render/-/react-x-render-3.0.0-beta.1.tgz#f5c659c770f87a98c9873b370fa22335ca3b3175"
+  integrity sha512-WnLf4BA64xV9Kax/YoW0Zjc9KG49fiSA4kvCGwjzkJ83B/aekhvKj3pxW9X7YFRC2NlaIuR6fFcnNa5S46V5Zg==
   dependencies:
     prop-types "^15.6.1"
 
-react-x-storage@3.0.0-beta.0:
-  version "3.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/react-x-storage/-/react-x-storage-3.0.0-beta.0.tgz#1c3345bf709a655bac3ca884e6a79793e9dfb4a3"
-  integrity sha512-BrKBs0eudM+3WU8o2nOtmb5yX4TLenouyUOu3JWh+q33Ut+Q4sZDVMOqghQsUaocHX6Y5MWLS/nI5JoAgXt8pQ==
+react-x-storage@3.0.0-beta.1:
+  version "3.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-x-storage/-/react-x-storage-3.0.0-beta.1.tgz#5860b9bbd1862b479e99ac2fcdc514eb4ed638ce"
+  integrity sha512-kP4JHygTnXCb3XR5h9WbzzySX7/8rBF8zMgccvK1HQlAdUx+Izmg+y75ghEvDi6qwl1JgJbZiZctc7/yIhPgRg==
   dependencies:
     react-native "0.59.8"
 
-react-x-svg@3.0.0-beta.0:
-  version "3.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/react-x-svg/-/react-x-svg-3.0.0-beta.0.tgz#ae2eabad17128e91807a9df263d8e11e12b31745"
-  integrity sha512-7ZcOLODsxtbdgjBRX0wXkJoi4cyqptdXgTU9PoSKkHnPblZXGfIMJQ0KSmhr7a3gb9nHnoUUJtFtC+Ztot6clw==
+react-x-svg@3.0.0-beta.1:
+  version "3.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-x-svg/-/react-x-svg-3.0.0-beta.1.tgz#150bb49159805b156e9a1842de859022c89c5e24"
+  integrity sha512-1F1kBCD59am802n1lJqZd4lKjCDF9/QxP4syScY45MbVhCdOPwXzRS2tcKWvEtmXJztlA+mIe+70LBDYuqn3xg==
   dependencies:
     prop-types "^15.6.1"
     react-native-svg "^6.3.1"
 
-react-x-switch@3.0.0-beta.0:
-  version "3.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/react-x-switch/-/react-x-switch-3.0.0-beta.0.tgz#4482c1e94b0c1f95deb6017cd73e0b4cc7f45ae2"
-  integrity sha512-mW2asL62RQkaYJBlGZxDW6MLlVbOAB89h5ekYuj+nW9NO1bntjsx6/2ULykHQmE/a6nLxIOSk8TLFGtdKWEuyQ==
+react-x-switch@3.0.0-beta.1:
+  version "3.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-x-switch/-/react-x-switch-3.0.0-beta.1.tgz#b40e54484a59d588fafca3ae29980fc987774535"
+  integrity sha512-axe5iN6nuiJjhX2JubiV1qd3+9sBQWrQTtQul5TMPTmDv0UzbDTvg9QyhU9xfw5mBielbcbbj/cm+TO9y6F5+g==
   dependencies:
     prop-types "^15.6.1"
     react-ios-switch "^0.1.19"
 
-react-x-text-input@3.0.0-beta.0:
-  version "3.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/react-x-text-input/-/react-x-text-input-3.0.0-beta.0.tgz#3e4903b31e9aa8d6bf394d12d1aa59a2089bb5ef"
-  integrity sha512-xPYsPqqK9tD3CJ7ur1yIGAmw33TnOE70es7gI7ipdfTKjqxHYEL19qz1XipiyxOTmsiBbgsFXdk3BctGdyu8ug==
+react-x-text-input@3.0.0-beta.1:
+  version "3.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-x-text-input/-/react-x-text-input-3.0.0-beta.1.tgz#ae28bf69b0912c73155ae9c32f6477a2b3550048"
+  integrity sha512-S0OD11NnjKFRzAtx811Ok15nXS+9ORmahvCz8ZbXjSxshJjhfM/LVf5jShRNJiRNctrH4Ctifs72ukzR3eD/Ug==
 
-react-x@3.0.0-beta.0:
-  version "3.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/react-x/-/react-x-3.0.0-beta.0.tgz#7e38ee47f47cbbeb16b67fa44f0bed0f5da51079"
-  integrity sha512-oVd1Mjr+c5ab3LVMLscnujkd7H5eD856a2zsCiPF345WEk4gDWZ90ardz3k7s97o13eLEgDhpRT0yQ8+Q0Iwrw==
+react-x@3.0.0-beta.1:
+  version "3.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/react-x/-/react-x-3.0.0-beta.1.tgz#8acd9284447a9558a326e5687f5f86c946bd700c"
+  integrity sha512-8FmAekTJ7P/caEsSS7MvkTnJl+m5PPOhy/doj533utLQK1PGFTBLH4rKE6WqXU/zGyc55J3+aM6dh2IYhvRUzg==
   dependencies:
-    react-x-clipboard "3.0.0-beta.0"
-    react-x-keychain "3.0.0-beta.0"
-    react-x-primitives "3.0.0-beta.0"
-    react-x-render "3.0.0-beta.0"
-    react-x-storage "3.0.0-beta.0"
-    react-x-svg "3.0.0-beta.0"
-    react-x-switch "3.0.0-beta.0"
+    react-x-clipboard "3.0.0-beta.1"
+    react-x-keychain "3.0.0-beta.1"
+    react-x-primitives "3.0.0-beta.1"
+    react-x-render "3.0.0-beta.1"
+    react-x-storage "3.0.0-beta.1"
+    react-x-svg "3.0.0-beta.1"
+    react-x-switch "3.0.0-beta.1"
+    react-x-text-input "3.0.0-beta.1"
 
 react@16.4.2:
   version "16.4.2"
