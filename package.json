@@ -42,7 +42,6 @@
   },
   "workspaces": {
     "packages": [
-      "examples/*",
       "packages/*",
       "themes/*",
       "tools/*"
