@@ -40,12 +40,14 @@
       "yarn lint"
     ]
   },
-  "workspaces": [
-    "examples/*",
-    "packages/*",
-    "themes/*",
-    "tools/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "examples/*",
+      "packages/*",
+      "themes/*",
+      "tools/*"
+    ]
+  },
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
