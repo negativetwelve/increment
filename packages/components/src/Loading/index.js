@@ -1,7 +1,6 @@
 // Libraries
 import React from 'react';
 import PropTypes from 'prop-types';
-import {ActivityIndicator} from 'react-native-web';
 
 // --------------------------------------------------
 // Components
@@ -39,7 +38,5 @@ Loading.defaultProps = {
   loading: true,
   as: null,
 };
-
-Loading.Indicator = ActivityIndicator;
 
 export default Loading;
