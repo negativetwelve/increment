@@ -5,10 +5,10 @@ import PropTypes from 'prop-types';
 // Components
 import Styled from '../Styled';
 
-const Container = Styled.View.extend`
+const Container = Styled.View`
 `;
 
-const Content = Styled.View.extend`
+const Content = Styled.View`
   position: absolute;
   top: 0;
   right: 0;

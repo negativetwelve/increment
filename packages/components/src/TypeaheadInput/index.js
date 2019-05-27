@@ -6,16 +6,16 @@ import PropTypes from 'prop-types';
 import Dropdown from '../Dropdown';
 import Styled from '../Styled';
 
-const Items = Styled.View.extend`
+const Items = Styled.View`
   padding-vertical: 8px;
   background-color: #FFFFFF;
 `;
 
-const Item = Styled.View.extend`
+const Item = Styled.View`
   z-index: 100;
 `;
 
-const Action = Styled.Touchable.extend`
+const Action = Styled.Touchable`
 `;
 
 const TypeaheadInput = ({
