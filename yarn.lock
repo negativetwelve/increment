@@ -9399,6 +9399,11 @@ react-x-switch@3.0.0-beta.0:
     prop-types "^15.6.1"
     react-ios-switch "^0.1.19"
 
+react-x-text-input@3.0.0-beta.0:
+  version "3.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/react-x-text-input/-/react-x-text-input-3.0.0-beta.0.tgz#3e4903b31e9aa8d6bf394d12d1aa59a2089bb5ef"
+  integrity sha512-xPYsPqqK9tD3CJ7ur1yIGAmw33TnOE70es7gI7ipdfTKjqxHYEL19qz1XipiyxOTmsiBbgsFXdk3BctGdyu8ug==
+
 react-x@3.0.0-beta.0:
   version "3.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/react-x/-/react-x-3.0.0-beta.0.tgz#7e38ee47f47cbbeb16b67fa44f0bed0f5da51079"

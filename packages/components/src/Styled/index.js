@@ -1,11 +1,11 @@
 // Libraries
 import Styled from 'styled-x';
-import {TextInput, Touchable} from 'react-x';
 
-Styled.Touchable = Styled(Touchable)`
-  cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
-`;
+// Components
+import TextInput from './TextInput';
+import Touchable from './Touchable';
 
 Styled.TextInput = Styled(TextInput);
+Styled.Touchable = Styled(Touchable);
 
 export default Styled;
