@@ -7,7 +7,7 @@ import Toggle from '../Toggle';
 import Window from '../Window';
 import DropdownContent from './DropdownContent';
 
-const Content = Styled.View.extend`
+const Content = Styled.View`
 `;
 
 const Dropdown = ({trigger, onBlur, children, style}) => (

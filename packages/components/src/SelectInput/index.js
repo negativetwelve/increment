@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import Dropdown from '../Dropdown';
 import Styled from '../Styled';
 
-const Touchable = Styled.Touchable.extend`
+const Touchable = Styled.Touchable`
   flex-direction: row;
   align-items: center;
   background-color: #FFFFFF;
@@ -19,16 +19,16 @@ const Touchable = Styled.Touchable.extend`
   cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
 `;
 
-const Items = Styled.View.extend`
+const Items = Styled.View`
   padding-vertical: 8px;
   background-color: #FFFFFF;
 `;
 
-const Item = Styled.View.extend`
+const Item = Styled.View`
   z-index: 100;
 `;
 
-const Action = Styled.Touchable.extend`
+const Action = Styled.Touchable`
 `;
 
 const SelectInput = ({
