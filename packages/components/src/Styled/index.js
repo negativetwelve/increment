@@ -1,11 +1,8 @@
-/* eslint-disable max-len */
-
 // Libraries
 import Styled from 'styled-x';
-import {TextInput, TouchableOpacity} from 'react-native-web';
+import {TextInput, Touchable} from 'react-x';
 
-// TODO(mark): There's a bug with the normal Touchable so we override it.
-Styled.Touchable = Styled(TouchableOpacity)`
+Styled.Touchable = Styled(Touchable)`
   cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
 `;
 
