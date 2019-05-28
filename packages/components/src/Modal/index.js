@@ -1,5 +1,6 @@
 // Libraries
 import React from 'react';
+import PropTypes from 'prop-types';
 import Modal from 'react-modal';
 import styled from 'styled-components';
 
@@ -7,7 +8,7 @@ Modal.setAppElement('#___gatsby');
 
 class ModalAdapter extends React.Component {
   state = {
-    isOpen: false,
+    isOpen: this.props.initialIsOpen,
   };
 
   handleOpen = () => {
@@ -46,6 +47,14 @@ class ModalAdapter extends React.Component {
     );
   }
 }
+
+ModalAdapter.propTypes = {
+  initialIsOpen: PropTypes.bool,
+};
+
+ModalAdapter.defaultProps = {
+  initialIsOpen: false,
+};
 
 const StyledModal = styled(ModalAdapter)`
   &__overlay {
