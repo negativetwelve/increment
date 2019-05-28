@@ -1,7 +1,7 @@
 // Libraries
 import React from 'react';
 import PropTypes from 'prop-types';
-import Modal from 'react-modal';
+import ReactModal from 'react-modal';
 import styled from 'styled-components';
 
 class ModalAdapter extends React.Component {
@@ -32,7 +32,7 @@ class ModalAdapter extends React.Component {
     return (
       <React.Fragment>
         {trigger({isOpen, handleOpen: this.handleOpen})}
-        <Modal
+        <ReactModal
           ariaHideApp={false}
           isOpen={isOpen}
           className={contentClassName}
@@ -41,7 +41,7 @@ class ModalAdapter extends React.Component {
           onRequestClose={this.handleRequestClose}
           {...props}>
           {children({isOpen, handleClose: this.handleClose})}
-        </Modal>
+        </ReactModal>
       </React.Fragment>
     );
   }
@@ -55,7 +55,9 @@ ModalAdapter.defaultProps = {
   initialIsOpen: false,
 };
 
-const StyledModal = styled(ModalAdapter)`
+const Modal = styled(ModalAdapter).attrs({
+  suppressClassNameWarning: true,
+})`
   &__overlay {
     position: fixed;
     top: 0px;
@@ -83,4 +85,4 @@ const StyledModal = styled(ModalAdapter)`
   }
 `;
 
-export default StyledModal;
+export default Modal;
