@@ -1,13 +1,12 @@
 // Libraries
 import React from 'react';
-import Modal from 'react-modal';
+import PropTypes from 'prop-types';
+import ReactModal from 'react-modal';
 import styled from 'styled-components';
-
-Modal.setAppElement('#___gatsby');
 
 class ModalAdapter extends React.Component {
   state = {
-    isOpen: false,
+    isOpen: this.props.initialIsOpen,
   };
 
   handleOpen = () => {
@@ -33,7 +32,8 @@ class ModalAdapter extends React.Component {
     return (
       <React.Fragment>
         {trigger({isOpen, handleOpen: this.handleOpen})}
-        <Modal
+        <ReactModal
+          ariaHideApp={false}
           isOpen={isOpen}
           className={contentClassName}
           portalClassName={className}
@@ -41,13 +41,23 @@ class ModalAdapter extends React.Component {
           onRequestClose={this.handleRequestClose}
           {...props}>
           {children({isOpen, handleClose: this.handleClose})}
-        </Modal>
+        </ReactModal>
       </React.Fragment>
     );
   }
 }
 
-const StyledModal = styled(ModalAdapter)`
+ModalAdapter.propTypes = {
+  initialIsOpen: PropTypes.bool,
+};
+
+ModalAdapter.defaultProps = {
+  initialIsOpen: false,
+};
+
+const Modal = styled(ModalAdapter).attrs({
+  suppressClassNameWarning: true,
+})`
   &__overlay {
     position: fixed;
     top: 0px;
@@ -75,4 +85,4 @@ const StyledModal = styled(ModalAdapter)`
   }
 `;
 
-export default StyledModal;
+export default Modal;
