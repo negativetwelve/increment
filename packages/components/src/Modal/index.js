@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import Modal from 'react-modal';
 import styled from 'styled-components';
 
-Modal.setAppElement('#___gatsby');
-
 class ModalAdapter extends React.Component {
   state = {
     isOpen: this.props.initialIsOpen,
@@ -35,6 +33,7 @@ class ModalAdapter extends React.Component {
       <React.Fragment>
         {trigger({isOpen, handleOpen: this.handleOpen})}
         <Modal
+          ariaHideApp={false}
           isOpen={isOpen}
           className={contentClassName}
           portalClassName={className}

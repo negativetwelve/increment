@@ -2,4 +2,22 @@
 
 exports[`Modal with initialIsOpen: false renders snapshot 1`] = `null`;
 
-exports[`Modal with initialIsOpen: true renders snapshot 1`] = `null`;
+exports[`Modal with initialIsOpen: true renders snapshot 1`] = `
+<div
+  aria-modal="true"
+  className="ReactModal__Overlay ReactModal__Overlay--after-open sc-bdVaJa gbpcWA__overlay"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  style={Object {}}
+>
+  <div
+    className="ReactModal__Content ReactModal__Content--after-open sc-bdVaJa gbpcWA__content"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    style={Object {}}
+    tabIndex="-1"
+  />
+</div>
+`;
