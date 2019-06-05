@@ -1,2 +1,6 @@
-// This component does not work with react-native.
-export default {};
+// Libraries
+import React from 'react';
+
+const Grid = ({children}) => children;
+
+export default Grid;
