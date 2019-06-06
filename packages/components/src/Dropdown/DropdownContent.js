@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import Styled from '../Styled';
 
 const Container = Styled.View`
+  display: ${props => props.isVisible ? 'flex' : 'none'};
 `;
 
 const Content = Styled.View`
@@ -17,8 +18,9 @@ const Content = Styled.View`
   z-index: 100;
 `;
 
-const DropdownContent = ({height, children, style}) => (
-  <Container>
+const DropdownContent = ({isVisible, height, children, style}) => (
+  <Container
+    isVisible={isVisible}>
     <Content
       height={height}
       style={style}>
