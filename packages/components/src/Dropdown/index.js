@@ -19,7 +19,7 @@ const Dropdown = ({trigger, onBlur, children, style}) => (
             ref={ref}
             style={style}>
             {trigger({isOpen, handleOpen, handleClose, handleToggle})}
-            {isOpen && children({handleClose})}
+            {children({isOpen, handleClose})}
           </Content>
         )}
       </Window>
