@@ -4,6 +4,7 @@ import {InMemoryCache} from 'apollo-cache-inmemory';
 import {ApolloLink} from 'apollo-link';
 import {setContext} from 'apollo-link-context';
 import {HttpLink} from 'apollo-link-http';
+import merge from 'lodash.merge';
 
 const createGraphQLMiddleware = ({uri}) => {
   return new HttpLink({uri});
@@ -34,17 +35,19 @@ const createAuthenticationMiddleware = ({getToken}) => {
   });
 };
 
-const createClient = ({middleware = []} = {}) => {
+const DEFAULT_OPTIONS = {
+  watchQuery: {
+    fetchPolicy: 'cache-first',
+  },
+};
+
+const createClient = ({middleware = [], defaultOptions = {}} = {}) => {
   return new ApolloClient({
     link: ApolloLink.from(middleware),
     cache: new InMemoryCache({
       addTypename: true,
     }),
-    defaultOptions: {
-      watchQuery: {
-        fetchPolicy: 'cache-first',
-      },
-    },
+    defaultOptions: merge({}, DEFAULT_OPTIONS, defaultOptions),
   });
 };
 
