@@ -10,7 +10,8 @@
     "apollo-link-http": "1.5.14",
     "eslint-plugin-graphql": "3.0.3",
     "graphql": "14.2.1",
-    "graphql-tag": "2.10.1"
+    "graphql-tag": "2.10.1",
+    "lodash.merge": "4.6.1"
   },
   "scripts": {
     "build": "babel src --out-dir build --ignore \"**/__tests__/**\"",
