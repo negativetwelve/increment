@@ -1,3 +1,4 @@
+export {default as Children} from './Children';
 export {default as Delay} from './Delay';
 export {default as Dropdown} from './Dropdown';
 export {default as ErrorBoundary} from './ErrorBoundary';
