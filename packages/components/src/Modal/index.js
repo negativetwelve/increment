@@ -10,13 +10,25 @@ class ModalAdapter extends React.Component {
   };
 
   handleOpen = () => {
-    // HACK(mark): We need to open on the next event so the setState
-    // isn't batched with clicking on the overlay to close.
-    setTimeout(() => this.setState({isOpen: true}), 0);
+    this.setState({isOpen: true}, () => {
+      if (this.props.onOpen) {
+        this.props.onOpen();
+      }
+    });
   };
 
   handleClose = () => {
-    this.setState({isOpen: false});
+    this.setState({isOpen: false}, () => {
+      if (this.props.onClose) {
+        this.props.onClose();
+      }
+    });
+  };
+
+  handleRequestOpen = () => {
+    // We need to open on the next event so the setState
+    // isn't batched with clicking on the overlay to close.
+    setTimeout(this.handleOpen, 0);
   };
 
   handleRequestClose = () => {
@@ -31,7 +43,7 @@ class ModalAdapter extends React.Component {
 
     return (
       <React.Fragment>
-        {trigger({isOpen, handleOpen: this.handleOpen})}
+        {trigger({isOpen, handleOpen: this.handleRequestOpen})}
         <ReactModal
           ariaHideApp={false}
           isOpen={isOpen}
@@ -40,19 +52,26 @@ class ModalAdapter extends React.Component {
           overlayClassName={overlayClassName}
           onRequestClose={this.handleRequestClose}
           {...props}>
-          {children({isOpen, handleClose: this.handleClose})}
+          {children({isOpen, handleClose: this.handleRequestClose})}
         </ReactModal>
       </React.Fragment>
     );
   }
 }
 
+// --------------------------------------------------
+// Props
+// --------------------------------------------------
 ModalAdapter.propTypes = {
   initialIsOpen: PropTypes.bool,
+  onOpen: PropTypes.func,
+  onClose: PropTypes.func,
 };
 
 ModalAdapter.defaultProps = {
   initialIsOpen: false,
+  onOpen: () => {},
+  onClose: () => {},
 };
 
 const Modal = styled(ModalAdapter).attrs({
