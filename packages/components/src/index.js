@@ -9,6 +9,7 @@ export {default as Loading} from './Loading';
 export {default as Modal} from './Modal';
 export {default as Mutation} from './Mutation';
 export {default as Query} from './Query';
+export {default as Ref} from './Ref';
 export {default as Responsive} from './Responsive';
 export {default as SelectInput} from './SelectInput';
 export {default as State} from './State';
