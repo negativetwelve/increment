@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal with initialIsOpen: false renders snapshot 1`] = `null`;
+
+exports[`Modal with initialIsOpen: true renders snapshot 1`] = `null`;
