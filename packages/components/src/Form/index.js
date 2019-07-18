@@ -3,6 +3,13 @@ import React from 'react';
 import {Formik} from 'formik';
 import _ from 'lodash';
 
+const getFieldName = ({field}) => {
+  const parts = field.split('.');
+  const camelCaseParts = parts.map((part) => _.camelCase(part));
+
+  return camelCaseParts.join('.');
+};
+
 const Form = ({children, ...props}) => (
   <Formik
     {...props}
@@ -17,7 +24,7 @@ const Form = ({children, ...props}) => (
 
           if (errors) {
             // This will override errors so the first one for a given field shows first.
-            _.forEachRight(errors, error => setFieldError(_.camelCase(error.field), error.message));
+            _.forEachRight(errors, error => setFieldError(getFieldName(error), error.message));
           }
         },
       });
