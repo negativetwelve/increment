@@ -6,6 +6,10 @@ class Lifecycle extends React.Component {
     this.props.onMount && this.props.onMount();
   }
 
+  componentDidUpdate() {
+    this.props.onUpdate && this.props.onUpdate();  
+  }
+  
   render() {
     return this.props.children;
   }
