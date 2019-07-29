@@ -6,7 +6,7 @@ module.exports = (context, options = {}) => {
     ],
     plugins: [
       '@babel/plugin-proposal-class-properties',
-      '@babel/plugin-transform-regenerator',
+      '@babel/plugin-transform-runtime',
     ],
   };
 };

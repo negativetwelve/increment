@@ -3,6 +3,7 @@
   "version": "0.31.0",
   "main": "build/index.js",
   "dependencies": {
+    "@increment/core": "0.31.0",
     "formik": "0.11.11",
     "node-emoji": "1.8.1",
     "prop-types": "15.7.2",

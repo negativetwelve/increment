@@ -4,6 +4,7 @@
   "main": "build/index.js",
   "dependencies": {
     "@increment/components": "0.31.0",
+    "@increment/core": "0.31.0",
     "prop-types": "15.7.2",
     "react": "16.8.3"
   },
