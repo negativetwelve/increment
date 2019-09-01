@@ -28,7 +28,7 @@ class ModalAdapter extends React.Component {
   handleRequestOpen = () => {
     // We need to open on the next event so the setState
     // isn't batched with clicking on the overlay to close.
-    setTimeout(this.handleOpen, 0);
+    setTimeout(this.handleOpen, this.props.openDelay);
   };
 
   handleRequestClose = () => {
@@ -64,12 +64,14 @@ class ModalAdapter extends React.Component {
 // --------------------------------------------------
 ModalAdapter.propTypes = {
   initialIsOpen: PropTypes.bool,
+  openDelay: PropTypes.number,
   onOpen: PropTypes.func,
   onClose: PropTypes.func,
 };
 
 ModalAdapter.defaultProps = {
   initialIsOpen: false,
+  openDelay: 200,
   onOpen: () => {},
   onClose: () => {},
 };
