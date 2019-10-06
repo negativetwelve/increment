@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 // --------------------------------------------------
 class Loading extends React.Component {
   shouldComponentUpdate(nextProps) {
-    return !nextProps.loading;
+    return !nextProps.loading || nextProps.alwaysUpdate;
   }
 
   render() {
@@ -31,11 +31,13 @@ class Loading extends React.Component {
 Loading.propTypes = {
   children: PropTypes.func.isRequired,
   loading: PropTypes.bool,
+  alwaysUpdate: PropTypes.bool,
   as: PropTypes.any,
 };
 
 Loading.defaultProps = {
   loading: true,
+  alwaysUpdate: false,
   as: null,
 };
 
