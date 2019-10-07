@@ -5,12 +5,12 @@
   "dependencies": {
     "@increment/core": "0.34.0",
     "@increment/graphql": "0.34.0",
-    "apollo-client": "2.5.1",
+    "apollo-client": "2.6.4",
     "cross-fetch": "2.1.0",
     "graphql": "14.2.1",
     "prop-types": "15.7.2",
     "react": "16.8.3",
-    "react-apollo": "2.5.5",
+    "react-apollo": "2.5.8",
     "react-router-dom": "5.0.0"
   },
   "scripts": {
