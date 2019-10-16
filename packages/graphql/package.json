@@ -1,9 +1,9 @@
 {
   "name": "@increment/graphql",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "build/index.js",
   "dependencies": {
-    "@increment/core": "1.0.0",
+    "@increment/core": "1.1.0",
     "apollo-cache-inmemory": "1.6.3",
     "apollo-client": "2.6.4",
     "apollo-link": "1.2.13",
