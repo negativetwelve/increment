@@ -1,6 +1,6 @@
 // Libraries
 import React from 'react';
-import MediaQuery from 'react-responsive';
+import {useMediaQuery} from 'react-responsive';
 
 const defaults = {
   desktop: false,
@@ -8,26 +8,24 @@ const defaults = {
   mobile: false,
 };
 
-const LargeDesktop = (props) => <MediaQuery {...props} minWidth={1200} />;
-const Desktop = (props) => <MediaQuery {...props} minWidth={992} maxWidth={1199} />;
-const Tablet = (props) => <MediaQuery {...props} minWidth={768} maxWidth={991} />;
-const Mobile = (props) => <MediaQuery {...props} maxWidth={767} />;
+const Responsive = ({children}) => {
+  const isLargeDesktop = useMediaQuery({minWidth: 1200});
+  const isDesktop = useMediaQuery({minWidth: 992, maxWidth: 1199});
+  const isTablet = useMediaQuery({minWidth: 768, maxWidth: 991});
+  const isMobile = useMediaQuery({maxWidth: 767});
 
-const Responsive = ({children, ...props}) => (
-  <React.Fragment>
-    <LargeDesktop>
-      {(matches) => matches ? children({...defaults, desktop: true, large: true}) : null}
-    </LargeDesktop>
-    <Desktop>
-      {(matches) => matches ? children({...defaults, desktop: true}) : null}
-    </Desktop>
-    <Tablet>
-      {(matches) => matches ? children({...defaults, tablet: true}) : null}
-    </Tablet>
-    <Mobile>
-      {(matches) => matches ? children({...defaults, mobile: true}) : null}
-    </Mobile>
-  </React.Fragment>
-);
+  if (isLargeDesktop) {
+    return children({...defaults, desktop: true, large: true});
+  } else if (isDesktop) {
+    return children({...defaults, desktop: true});
+  } else if (isTablet) {
+    return children({...defaults, tablet: true});
+  } else if (isMobile) {
+    return children({...defaults, mobile: true});
+  } else {
+    console.error('<Responsive> component did not satisfy any conditions. Rendering defaults.');
+    return children({...defaults});
+  }
+};
 
 export default Responsive;
