@@ -10,9 +10,8 @@ const defaults = {
 
 const Responsive = ({children}) => {
   const isLargeDesktop = useMediaQuery({minWidth: 1200});
-  const isDesktop = useMediaQuery({minWidth: 992, maxWidth: 1199});
-  const isTablet = useMediaQuery({minWidth: 768, maxWidth: 991});
-  const isMobile = useMediaQuery({maxWidth: 767});
+  const isDesktop = useMediaQuery({minWidth: 992});
+  const isTablet = useMediaQuery({minWidth: 768});
 
   if (isLargeDesktop) {
     return children({...defaults, desktop: true, large: true});
@@ -20,11 +19,9 @@ const Responsive = ({children}) => {
     return children({...defaults, desktop: true});
   } else if (isTablet) {
     return children({...defaults, tablet: true});
-  } else if (isMobile) {
-    return children({...defaults, mobile: true});
   } else {
-    console.error('<Responsive> component did not satisfy any conditions. Rendering defaults.');
-    return children({...defaults});
+    // Anything smaller is mobile.
+    return children({...defaults, mobile: true});
   }
 };
 
