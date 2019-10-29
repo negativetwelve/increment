@@ -1,5 +1,14 @@
 // Libraries
-import {useQuery, useLazyQuery, useMutation, useSubscription, useApolloClient} from '@apollo/react-hooks';
+import {
+  ApolloProvider,
+  Query,
+  Mutation,
+  useQuery,
+  useLazyQuery,
+  useMutation,
+  useSubscription,
+  useApolloClient,
+} from 'react-apollo';
 import gql from 'graphql-tag';
 
 // App
@@ -23,6 +32,9 @@ gql.errors = `
 
 export {
   // Apollo
+  ApolloProvider,
+  Query,
+  Mutation,
   useQuery,
   useLazyQuery,
   useMutation,
