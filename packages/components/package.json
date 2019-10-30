@@ -4,12 +4,12 @@
   "main": "build/index.js",
   "dependencies": {
     "@increment/core": "1.2.0",
+    "@increment/graphql": "1.2.0",
     "formik": "0.11.11",
     "node-emoji": "1.8.1",
     "prop-types": "15.7.2",
     "rc-tooltip": "3.7.3",
     "react": "16.8.3",
-    "react-apollo": "2.5.8",
     "react-dom": "16.8.3",
     "react-modal": "3.5.1",
     "react-native": "0.59.8",

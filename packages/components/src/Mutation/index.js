@@ -1,1 +1,1 @@
-export {Mutation as default} from 'react-apollo';
+export {Mutation as default} from '@increment/graphql';

@@ -1,1 +1,1 @@
-export {Query as default} from 'react-apollo';
+export {Query as default} from '@increment/graphql';
