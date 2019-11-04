@@ -41,7 +41,14 @@ const DEFAULT_OPTIONS = {
   },
 };
 
-const createClient = ({middleware = [], cacheOptions = {}, defaultOptions = {}} = {}) => {
+const createClient = (config = {}) => {
+  const {
+    middleware = [],
+    cacheOptions = {},
+    defaultOptions = {},
+    ...options
+  } = config;
+
   return new ApolloClient({
     link: ApolloLink.from(middleware),
     cache: new InMemoryCache({
@@ -49,6 +56,7 @@ const createClient = ({middleware = [], cacheOptions = {}, defaultOptions = {}} 
       ...cacheOptions,
     }),
     defaultOptions: merge({}, DEFAULT_OPTIONS, defaultOptions),
+    ...options,
   });
 };
 
