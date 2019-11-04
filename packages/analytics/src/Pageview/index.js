@@ -5,7 +5,8 @@ import {Lifecycle} from '@increment/components';
 // Components
 import Track from '../Track';
 
-// NOTE(mark): Must use the `path` as the `key` to trigger new components to mount when pages change.
+// NOTE(mark): Must use the `path` as the `key` to trigger new components to
+// mount when pages change.
 const Pageview = ({name, path, children}) => (
   <Track key={path}>
     {({track}) => (

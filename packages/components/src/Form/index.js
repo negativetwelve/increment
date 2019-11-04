@@ -23,7 +23,7 @@ const Form = ({children, ...props}) => (
           setErrors({});
 
           if (errors) {
-            // This will override errors so the first one for a given field shows first.
+            // This will override errors so the first one for a given field shows first.
             _.forEachRight(errors, error => setFieldError(getFieldName(error), error.message));
           }
         },

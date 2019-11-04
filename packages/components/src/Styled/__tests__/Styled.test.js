@@ -1,6 +1,6 @@
 // Libraries
 import React from 'react';
-import Styled from '../';
+import Styled from '..';
 
 const Square = Styled.View`
   height: 20px;

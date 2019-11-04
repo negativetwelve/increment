@@ -39,16 +39,16 @@ class Analytics extends React.Component {
       mixpanel.identify(id);
       mixpanel.people.set({
         ...payload,
-        '$first_name': firstName,
-        '$last_name': lastName,
-        '$email': email,
+        $first_name: firstName,
+        $last_name: lastName,
+        $email: email,
       });
     }
   };
 
   handleTrack = ({event, type, payload}) => {
     const {amplitude, mixpanel} = this.services;
-    const data = {...payload, 'Type': type, 'URL': window.location.pathname};
+    const data = {...payload, Type: type, URL: window.location.pathname};
 
     // Universal logging
     // console.log(`Track: ${event}`);
