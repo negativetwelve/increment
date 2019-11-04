@@ -7,9 +7,6 @@
   },
   "devDependencies": {
     "coveralls": "3.0.7",
-    "eslint": "4.18.2",
-    "eslint-config-jolt": "2.6.1",
-    "eslint-plugin-jest": "21.0.2",
     "husky": "0.14.3",
     "jest": "24.8.0",
     "jest-preset-react-x-dom": "3.0.0",
@@ -21,15 +18,6 @@
     "react-dom": "16.8.3",
     "rimraf": "2.6.1"
   },
-  "eslintConfig": {
-    "extends": "jolt"
-  },
-  "eslintIgnore": [
-    "build",
-    "coverage",
-    "examples",
-    "node_modules"
-  ],
   "jest": {
     "projects": [
       "test/jest-config.dom.js",

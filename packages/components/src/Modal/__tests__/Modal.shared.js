@@ -1,6 +1,6 @@
 // Libraries
 import React from 'react';
-import Modal from '../';
+import Modal from '..';
 
 /* eslint-disable no-undef */
 describe('Modal', () => {

@@ -20,7 +20,7 @@ class Window extends React.Component {
     if (!this.ref.current) {
       console.log(
         'Missing ref to Window child. Make sure to set the `ref` prop on ' +
-        'a React component.'
+        'a React component.',
       );
       return;
     }

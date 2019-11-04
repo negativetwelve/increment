@@ -29,7 +29,7 @@ const createAuthenticationMiddleware = ({getToken}) => {
       const token = await getToken();
 
       return {
-        Authorization: token ? token : null,
+        Authorization: token,
       };
     },
   });

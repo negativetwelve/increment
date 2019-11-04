@@ -47,7 +47,8 @@ class Modal extends React.Component {
           animationType={'fade'}
           visible={isOpen}
           onRequestClose={this.handleRequestClose}
-          {...props}>
+          {...props}
+        >
           <ReactNative.TouchableOpacity
             activeOpacity={1}
             onPress={this.handleRequestClose}
@@ -64,7 +65,8 @@ class Modal extends React.Component {
               left: 0,
               right: 0,
               bottom: 0,
-            }}>
+            }}
+          >
             {children({handleClose: this.handleRequestClose})}
           </ReactNative.View>
         </ReactNative.Modal>
