@@ -9,7 +9,8 @@ const Hover = ({children}) => (
     {({isOpen, handleOpen, handleClose}) => (
       <div
         onMouseEnter={handleOpen}
-        onMouseLeave={handleClose}>
+        onMouseLeave={handleClose}
+      >
         {children({isHovered: isOpen})}
       </div>
     )}

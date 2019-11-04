@@ -42,7 +42,7 @@ const TypeaheadInput = ({
         defaultValue={value}
         onFocus={(event) => handleOpen()}
         onBlur={(event) => {
-          const value = event.target.value;
+          const {value} = event.target;
           const option = {name, value};
 
           onChange(name, value, option);
@@ -51,7 +51,8 @@ const TypeaheadInput = ({
       />
     )}
     onBlur={() => onBlur(name, true)}
-    style={style}>
+    style={style}
+  >
     {({handleClose}) => (
       <Dropdown.Content
         height={height}
@@ -62,7 +63,8 @@ const TypeaheadInput = ({
           borderColor: '#E0E0EB',
           borderRadius: 4,
           boxShadow: '0 2px 5px rgba(194,194,194,0.5)',
-        }}>
+        }}
+      >
         <Items>
           {options.map((option, index) => (
             <Item key={index}>

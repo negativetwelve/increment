@@ -17,7 +17,8 @@ const Dropdown = ({trigger, onBlur, children, style}) => (
         {({ref}) => (
           <Content
             ref={ref}
-            style={style}>
+            style={style}
+          >
             {trigger({isOpen, handleOpen, handleClose, handleToggle})}
             {children({isOpen, handleClose})}
           </Content>

@@ -54,7 +54,8 @@ class Grid extends React.Component {
                       columnIndex={columnIndex}
                       rowIndex={rowIndex}
                       cache={this.cache}
-                      parent={parent}>
+                      parent={parent}
+                    >
                       <div style={style}>
                         {children({
                           header: true,
@@ -88,7 +89,8 @@ class Grid extends React.Component {
                       columnIndex={columnIndex}
                       rowIndex={rowIndex}
                       cache={this.cache}
-                      parent={parent}>
+                      parent={parent}
+                    >
                       <div style={style}>
                         {children({
                           header: false,

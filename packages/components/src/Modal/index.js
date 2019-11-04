@@ -51,7 +51,8 @@ class ModalAdapter extends React.Component {
           portalClassName={className}
           overlayClassName={overlayClassName}
           onRequestClose={this.handleRequestClose}
-          {...props}>
+          {...props}
+        >
           {children({isOpen, handleClose: this.handleRequestClose})}
         </ReactModal>
       </React.Fragment>

@@ -20,10 +20,12 @@ const Content = Styled.View`
 
 const DropdownContent = ({isVisible, height, children, style}) => (
   <Container
-    isVisible={isVisible}>
+    isVisible={isVisible}
+  >
     <Content
       height={height}
-      style={style}>
+      style={style}
+    >
       {children}
     </Content>
   </Container>

@@ -10,7 +10,8 @@ const Text = Styled.Text`
 
 const Emoji = ({component: Component = Text, name, style}) => (
   <Component
-    style={style}>
+    style={style}
+  >
     {emoji.get(name)}
   </Component>
 );

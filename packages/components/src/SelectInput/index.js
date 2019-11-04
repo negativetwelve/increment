@@ -54,7 +54,8 @@ const SelectInput = ({
         <Touchable
           disabled={disabled}
           activeOpacity={1}
-          onPress={handleToggle}>
+          onPress={handleToggle}
+        >
           {option ? (
             renderValue(option)
           ) : (
@@ -64,7 +65,8 @@ const SelectInput = ({
       );
     }}
     onBlur={() => onBlur(name, true)}
-    style={style}>
+    style={style}
+  >
     {({handleClose}) => (
       <Dropdown.Content
         height={height}
@@ -75,7 +77,8 @@ const SelectInput = ({
           borderColor: '#E0E0EB',
           borderRadius: 4,
           boxShadow: '0 2px 5px rgba(194,194,194,0.5)',
-        }}>
+        }}
+      >
         <Items>
           {options.map((option, index) => (
             <Item key={index}>

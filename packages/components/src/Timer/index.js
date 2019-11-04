@@ -39,7 +39,7 @@ class Timer extends React.Component {
   };
 
   tick = () => {
-    this.setState({counter: this.state.counter + 10});
+    this.setState(({counter}) => ({counter: counter + 10}));
   };
 
   render() {
