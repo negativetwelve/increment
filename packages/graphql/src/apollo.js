@@ -3,8 +3,18 @@ import {ApolloClient} from 'apollo-client';
 import {InMemoryCache} from 'apollo-cache-inmemory';
 import {ApolloLink} from 'apollo-link';
 import {setContext} from 'apollo-link-context';
+import {onError as onGraphQLError} from 'apollo-link-error';
 import {HttpLink} from 'apollo-link-http';
+import {RetryLink} from 'apollo-link-retry';
 import merge from 'lodash.merge';
+
+const createErrorMiddleware = ({onError}) => {
+  return onGraphQLError((options) => onError(options));
+};
+
+const createRetryMiddleware = ({delay, attempts}) => {
+  return new RetryLink({delay, attempts});
+};
 
 const createGraphQLMiddleware = ({uri}) => {
   return new HttpLink({uri});
@@ -65,7 +75,9 @@ export {
   createClient,
 
   // Middleware
+  createAuthenticationMiddleware,
+  createErrorMiddleware,
   createGraphQLMiddleware,
   createHeadersMiddleware,
-  createAuthenticationMiddleware,
+  createRetryMiddleware,
 };

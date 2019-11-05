@@ -14,9 +14,11 @@ import gql from 'graphql-tag';
 // App
 import {
   createClient,
+  createAuthenticationMiddleware,
+  createErrorMiddleware,
   createGraphQLMiddleware,
   createHeadersMiddleware,
-  createAuthenticationMiddleware,
+  createRetryMiddleware,
 } from './apollo';
 
 gql.query = `
@@ -48,7 +50,9 @@ export {
   createClient,
 
   // Middleware
+  createAuthenticationMiddleware,
+  createErrorMiddleware,
   createGraphQLMiddleware,
   createHeadersMiddleware,
-  createAuthenticationMiddleware,
+  createRetryMiddleware,
 };
