@@ -18,6 +18,9 @@
     "react-dom": "16.8.3",
     "rimraf": "2.6.1"
   },
+  "resolutions": {
+    "react-test-renderer": "16.8.3"
+  },
   "jest": {
     "projects": [
       "test/jest-config.dom.js",
@@ -47,6 +50,8 @@
     "publish": "lerna publish --exact",
     "test": "jest",
     "test:build": "yarn run build && yarn run test",
+    "test:dom": "jest --config test/jest-config.dom.js",
+    "test:native": "jest --config test/jest-config.native.js",
     "test:coverage": "yarn test --coverage"
   }
 }
