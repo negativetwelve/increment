@@ -37,15 +37,19 @@ class Modal extends React.Component {
   };
 
   render() {
-    const {children} = this.props;
+    const {trigger, children} = this.props;
     const {isOpen} = this.state;
 
     return (
-      <ModalContent
-        isOpen={isOpen}
-        onClose={this.handleRequestClose}
-        children={children({isOpen, handleClose: this.handleRequestClose})}
-      />
+      <React.Fragment>
+        {trigger({isOpen, handleOpen: this.handleRequestOpen})}
+        <ModalContent
+          isOpen={isOpen}
+          onClose={this.handleRequestClose}
+        >
+          {children({isOpen, handleClose: this.handleRequestClose})}
+        </ModalContent>
+      </React.Fragment>
     );
   }
 }
@@ -54,6 +58,7 @@ class Modal extends React.Component {
 // Props
 // --------------------------------------------------
 Modal.propTypes = {
+  trigger: PropTypes.func.isRequired,
   initialIsOpen: PropTypes.bool,
   openDelay: PropTypes.number,
   onOpen: PropTypes.func,
