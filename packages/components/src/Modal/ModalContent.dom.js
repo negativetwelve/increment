@@ -26,6 +26,7 @@ const ModalAdapter = ({isOpen, onClose, className, ...props}) => {
 // --------------------------------------------------
 ModalAdapter.propTypes = {
   isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 ModalAdapter.defaultProps = {
