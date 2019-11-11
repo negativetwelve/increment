@@ -6,6 +6,7 @@
     "yarn": ">=1.0.1"
   },
   "devDependencies": {
+    "@babel/core": "7.6.2",
     "coveralls": "3.0.7",
     "husky": "0.14.3",
     "jest": "24.8.0",
@@ -16,6 +17,7 @@
     "raf": "3.3.2",
     "react": "16.8.3",
     "react-dom": "16.8.3",
+    "react-native": "0.59.8",
     "rimraf": "2.6.1"
   },
   "resolutions": {

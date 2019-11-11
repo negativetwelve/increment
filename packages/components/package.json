@@ -9,14 +9,15 @@
     "node-emoji": "1.8.1",
     "prop-types": "15.7.2",
     "rc-tooltip": "3.7.3",
-    "react": "16.8.3",
-    "react-dom": "16.8.3",
     "react-modal": "3.5.1",
-    "react-native": "0.59.8",
-    "react-native-web": "0.11.4",
     "react-responsive": "8.0.1",
     "react-router-dom": "5.1.2",
     "react-virtualized": "9.20.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.3",
+    "react-dom": ">=16.8.3",
+    "react-native": ">=0.59.8"
   },
   "devDependencies": {
     "@babel/core": "7.6.2"
