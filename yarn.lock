@@ -2222,6 +2222,28 @@
     xcode "^2.0.0"
     xmldoc "^0.4.0"
 
+"@react-x/jest-preset-dom@3.4.1":
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@react-x/jest-preset-dom/-/jest-preset-dom-3.4.1.tgz#9d824f409b8665806127b805f2eb9c89c5e1b77e"
+  integrity sha512-UUrK4my4pED4abjRo54WqrueezCu4QwRG4a/cxgZVxw0ZSyXxvXz5EItnEePfzS9luwFIjjWuAG0q8BYyaG5pQ==
+  dependencies:
+    browser-env "3.2.6"
+    identity-obj-proxy "^3.0.0"
+    jest-localstorage-mock "2.4.0"
+    jest-plugins "^2.9.0"
+    jest-plugins-react "^2.9.0"
+    jest-plugins-recommended "^2.9.0"
+
+"@react-x/jest-preset-native@3.4.1":
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@react-x/jest-preset-native/-/jest-preset-native-3.4.1.tgz#d871438199878321f8870f807f55e07afd8bea94"
+  integrity sha512-WFotmFRYvoUkqFvUkKk+BBnGV0DSgr4ne7xY2iXDexoRXYb0idkP8pTYZ5xcRyoFe3ZQyp83gvv17IKhVdUEdw==
+  dependencies:
+    jest-plugins "^2.9.0"
+    jest-plugins-react "^2.9.0"
+    jest-plugins-recommended "^2.9.0"
+    mock-async-storage "2.1.0"
+
 "@types/babel__core@^7.1.0":
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.3.tgz#e441ea7df63cd080dfcd02ab199e6d16a735fc30"
@@ -6624,28 +6646,6 @@ jest-pnp-resolver@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/jest-pnp-resolver/-/jest-pnp-resolver-1.2.1.tgz#ecdae604c077a7fbc70defb6d517c3c1c898923a"
   integrity sha512-pgFw2tm54fzgYvc/OHrnysABEObZCUNFnhjoRjaVOCN8NYc032/gVjPaHD4Aq6ApkSieWtfKAFQtmDKAmhupnQ==
-
-jest-preset-react-x-dom@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/jest-preset-react-x-dom/-/jest-preset-react-x-dom-3.0.0.tgz#d7fd1fcb3551c84e48bd36e1c4b5739cc16f3052"
-  integrity sha512-eCzJ7NiZRDrTWU4W/+Y3KzdKPC5AI7rSnko1lujdR23TkyntDwjRJ65En0ylNfyqF5Jw8REeJIWoGHu/8VTsIQ==
-  dependencies:
-    browser-env "3.2.6"
-    identity-obj-proxy "^3.0.0"
-    jest-localstorage-mock "2.4.0"
-    jest-plugins "^2.9.0"
-    jest-plugins-react "^2.9.0"
-    jest-plugins-recommended "^2.9.0"
-
-jest-preset-react-x-native@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/jest-preset-react-x-native/-/jest-preset-react-x-native-3.0.0.tgz#f60a15d7b335fa23f476668691fe7abc2369192c"
-  integrity sha512-Rxg8KQzkcAzmwXA4FrckxC/72t8p8Ds00bC7YgWEEhjluxHF4LON6xXK85g9Nw5mhchtO23S4tI0b5Pq/XZOrQ==
-  dependencies:
-    jest-plugins "^2.9.0"
-    jest-plugins-react "^2.9.0"
-    jest-plugins-recommended "^2.9.0"
-    mock-async-storage "2.1.0"
 
 jest-regex-util@^24.3.0, jest-regex-util@^24.9.0:
   version "24.9.0"
