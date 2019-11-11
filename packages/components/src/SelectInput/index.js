@@ -7,28 +7,6 @@ import View from '@react-x/view';
 // Components
 import Dropdown from '../Dropdown';
 
-const Touchable = Styled.Touchable`
-  flex-direction: row;
-  align-items: center;
-  background-color: #FFFFFF;
-  height: 50px;
-  padding-horizontal: 15px;
-  border-radius: 5px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #E0E0EB;
-  cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
-`;
-
-const Items = Styled.View`
-  padding-vertical: 8px;
-  background-color: #FFFFFF;
-`;
-
-const Item = Styled.View`
-  z-index: 100;
-`;
-
 const SelectInput = ({
   disabled,
   height,
@@ -49,17 +27,29 @@ const SelectInput = ({
       const option = options.find((option) => option.value === value);
 
       return (
-        <Touchable
+        <TouchableOpacity
           disabled={disabled}
           activeOpacity={1}
           onPress={handleToggle}
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            backgroundColor: '#FFFFFF',
+            height: 50,
+            paddingHorizontal: 15,
+            borderRadius: 5,
+            borderWidth: 1,
+            borderStyle: 'solid',
+            borderColor: '#E0E0EB',
+            cursor: disabled ? 'not-allowed' : 'pointer',
+          }}
         >
           {option ? (
             renderValue(option)
           ) : (
             renderPlaceholder({color: placeholderTextColor, text: placeholder})
           )}
-        </Touchable>
+        </TouchableOpacity>
       );
     }}
     onBlur={() => onBlur(name, true)}
@@ -77,9 +67,19 @@ const SelectInput = ({
           boxShadow: '0 2px 5px rgba(194,194,194,0.5)',
         }}
       >
-        <Items>
+        <View
+          style={{
+            paddingVertical: 8,
+            backgroundColor: '#FFFFFF',
+          }}
+        >
           {options.map((option, index) => (
-            <Item key={index}>
+            <View
+              key={index}
+              style={{
+                zIndex: 100,
+              }}
+            >
               <TouchableOpacity
                 onPress={() => {
                   onChange(name, option.value, option);
@@ -87,9 +87,9 @@ const SelectInput = ({
                 }}
                 children={renderOption(option)}
               />
-            </Item>
+            </View>
           ))}
-        </Items>
+        </View>
       </Dropdown.Content>
     )}
   </Dropdown>
