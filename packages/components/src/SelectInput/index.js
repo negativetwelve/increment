@@ -1,10 +1,11 @@
 // Libraries
 import React from 'react';
 import PropTypes from 'prop-types';
+import {TouchableOpacity} from '@react-x/touchable';
+import View from '@react-x/view';
 
 // Components
 import Dropdown from '../Dropdown';
-import Styled from '../Styled';
 
 const Touchable = Styled.Touchable`
   flex-direction: row;
@@ -26,9 +27,6 @@ const Items = Styled.View`
 
 const Item = Styled.View`
   z-index: 100;
-`;
-
-const Action = Styled.Touchable`
 `;
 
 const SelectInput = ({
@@ -82,7 +80,7 @@ const SelectInput = ({
         <Items>
           {options.map((option, index) => (
             <Item key={index}>
-              <Action
+              <TouchableOpacity
                 onPress={() => {
                   onChange(name, option.value, option);
                   handleClose();

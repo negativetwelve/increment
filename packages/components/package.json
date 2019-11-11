@@ -5,6 +5,9 @@
   "dependencies": {
     "@increment/core": "2.0.0",
     "@increment/graphql": "2.0.0",
+    "@react-x/text": "3.4.1",
+    "@react-x/touchable": "3.4.1",
+    "@react-x/view": "3.4.1",
     "formik": "0.11.11",
     "node-emoji": "1.8.1",
     "prop-types": "15.7.2",
@@ -18,6 +21,7 @@
     "react": ">=16.8.3",
     "react-dom": ">=16.8.3",
     "react-native": ">=0.59.8",
+    "react-native-web": ">=0.11.4",
     "styled-components": ">=4.2.0"
   },
   "scripts": {
