@@ -1,10 +1,10 @@
 {
   "name": "@increment/components",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "main": "build/index.js",
   "dependencies": {
-    "@increment/core": "2.0.0",
-    "@increment/graphql": "2.0.0",
+    "@increment/core": "2.1.0",
+    "@increment/graphql": "2.1.0",
     "@react-x/text": "3.4.1",
     "@react-x/touchable": "3.4.1",
     "@react-x/view": "3.4.1",
