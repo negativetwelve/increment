@@ -6,17 +6,20 @@
     "yarn": ">=1.0.1"
   },
   "devDependencies": {
+    "@babel/core": "7.6.2",
+    "@react-x/jest-preset-dom": "3.4.1",
+    "@react-x/jest-preset-native": "3.4.1",
     "coveralls": "3.0.7",
     "husky": "0.14.3",
     "jest": "24.8.0",
-    "jest-preset-react-x-dom": "3.0.0",
-    "jest-preset-react-x-native": "3.0.0",
     "lerna": "3.18.3",
     "lint-staged": "4.0.3",
     "raf": "3.3.2",
     "react": "16.8.3",
     "react-dom": "16.8.3",
-    "rimraf": "2.6.1"
+    "react-native": "0.59.8",
+    "rimraf": "2.6.1",
+    "styled-components": "4.2.0"
   },
   "resolutions": {
     "react-test-renderer": "16.8.3"
