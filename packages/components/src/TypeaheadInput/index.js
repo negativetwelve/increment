@@ -1,22 +1,11 @@
 // Libraries
 import React from 'react';
 import PropTypes from 'prop-types';
+import {TouchableOpacity} from '@react-x/touchable';
+import View from '@react-x/view';
 
 // Components
 import Dropdown from '../Dropdown';
-import Styled from '../Styled';
-
-const Items = Styled.View`
-  padding-vertical: 8px;
-  background-color: #FFFFFF;
-`;
-
-const Item = Styled.View`
-  z-index: 100;
-`;
-
-const Action = Styled.Touchable`
-`;
 
 const TypeaheadInput = ({
   component: InputComponent,
@@ -65,19 +54,29 @@ const TypeaheadInput = ({
           boxShadow: '0 2px 5px rgba(194,194,194,0.5)',
         }}
       >
-        <Items>
+        <View
+          style={{
+            paddingVertical: 8,
+            backgroundColor: '#FFFFFF',
+          }}
+        >
           {options.map((option, index) => (
-            <Item key={index}>
-              <Action
+            <View
+              key={index}
+              style={{
+                zIndex: 100,
+              }}
+            >
+              <TouchableOpacity
                 onPress={() => {
                   onChange(name, option.value, option);
                   handleClose();
                 }}
                 children={renderOption(option)}
               />
-            </Item>
+            </View>
           ))}
-        </Items>
+        </View>
       </Dropdown.Content>
     )}
   </Dropdown>

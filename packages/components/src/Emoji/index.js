@@ -1,12 +1,7 @@
 // Libraries
 import React from 'react';
 import emoji from 'node-emoji';
-
-// Components
-import Styled from '../Styled';
-
-const Text = Styled.Text`
-`;
+import Text from '@react-x/text';
 
 const Emoji = ({component: Component = Text, name, style}) => (
   <Component

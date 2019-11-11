@@ -1,34 +1,28 @@
 // Libraries
 import React from 'react';
 import PropTypes from 'prop-types';
-
-// Components
-import Styled from '../Styled';
-
-const Container = Styled.View`
-  display: ${props => props.isVisible ? 'flex' : 'none'};
-`;
-
-const Content = Styled.View`
-  position: absolute;
-  top: 0;
-  right: 0;
-  ${props => props.height && `max-height: ${props.height}px;`}
-  overflow-y: auto;
-  z-index: 100;
-`;
+import View from '@react-x/view';
 
 const DropdownContent = ({isVisible, height, children, style}) => (
-  <Container
-    isVisible={isVisible}
+  <View
+    style={{
+      display: isVisible ? 'flex' : 'none',
+    }}
   >
-    <Content
-      height={height}
-      style={style}
+    <View
+      style={{
+        position: 'absolute',
+        top: 0,
+        right: 0,
+        overflowY: 'auto',
+        zIndex: 100,
+        ...height ? {maxHeight: height} : {},
+        ...style,
+      }}
     >
       {children}
-    </Content>
-  </Container>
+    </View>
+  </View>
 );
 
 // --------------------------------------------------
@@ -36,10 +30,12 @@ const DropdownContent = ({isVisible, height, children, style}) => (
 // --------------------------------------------------
 DropdownContent.propTypes = {
   height: PropTypes.number,
+  style: PropTypes.object,
 };
 
 DropdownContent.defaultProps = {
   height: null,
+  style: {},
 };
 
 export default DropdownContent;
