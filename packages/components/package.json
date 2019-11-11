@@ -1,10 +1,10 @@
 {
   "name": "@increment/components",
-  "version": "1.8.0",
+  "version": "2.0.0",
   "main": "build/index.js",
   "dependencies": {
-    "@increment/core": "1.8.0",
-    "@increment/graphql": "1.8.0",
+    "@increment/core": "2.0.0",
+    "@increment/graphql": "2.0.0",
     "formik": "0.11.11",
     "node-emoji": "1.8.1",
     "prop-types": "15.7.2",
