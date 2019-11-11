@@ -16,9 +16,7 @@
     "react-native-web": "0.11.4",
     "react-responsive": "8.0.1",
     "react-router-dom": "5.1.2",
-    "react-virtualized": "9.20.1",
-    "react-x": "3.0.0",
-    "styled-x": "2.0.0"
+    "react-virtualized": "9.20.1"
   },
   "devDependencies": {
     "@babel/core": "7.6.2"

@@ -15,8 +15,6 @@ export {default as Ref} from './Ref';
 export {default as Responsive} from './Responsive';
 export {default as SelectInput} from './SelectInput';
 export {default as State} from './State';
-export {default as Styled} from './Styled';
-export {default as Switch} from './Switch';
 export {default as Timer} from './Timer';
 export {default as Toggle} from './Toggle';
 export {default as Tooltip} from './Tooltip';
