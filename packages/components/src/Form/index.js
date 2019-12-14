@@ -14,18 +14,22 @@ const Form = ({children, ...props}) => (
   <Formik
     {...props}
     render={(renderProps) => {
-      const {setFieldError, setErrors} = renderProps;
+      const {setErrors} = renderProps;
 
       return children({
         ...renderProps,
-        setMutationErrors: (errors) => {
+        setMutationErrors: (serverErrors = []) => {
           // Clear existing errors from previous submissions.
-          setErrors({});
+          const errors = {};
 
-          if (errors) {
-            // This will override errors so the first one for a given field shows first.
-            _.forEachRight(errors, error => setFieldError(getFieldName(error), error.message));
-          }
+          // This will override errors so that the first error for a given field
+          // shows first.
+          _.forEachRight(serverErrors, (serverError) => {
+            _.set(errors, getFieldName(serverError), serverError.message);
+          });
+
+          // Update the errors object all in one go to trigger one re-render.
+          setErrors(errors);
         },
       });
     }}
