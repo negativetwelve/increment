@@ -1,10 +1,10 @@
 {
   "name": "@increment/analytics",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "main": "build/index.js",
   "dependencies": {
-    "@increment/components": "2.1.0",
-    "@increment/core": "2.1.0",
+    "@increment/components": "2.1.1",
+    "@increment/core": "2.1.1",
     "prop-types": "15.7.2",
     "react": "16.8.3"
   },
