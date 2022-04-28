@@ -6,7 +6,7 @@
     "@increment/core": "2.1.1",
     "@increment/graphql": "2.1.1",
     "apollo-client": "2.6.4",
-    "cross-fetch": "2.1.0",
+    "cross-fetch": "3.1.5",
     "graphql": "14.2.1",
     "prop-types": "15.7.2",
     "react": "16.8.3",
